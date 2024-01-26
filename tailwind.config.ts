@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+// Need to import fonts
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
