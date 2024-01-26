@@ -1,6 +1,15 @@
 import React from 'react'
 
-const Product = () => {
+type ProductType = {
+  title: string;
+  description: string;
+  technicalDescription?: string;
+  url?: string;
+  github?: string;
+  
+}
+
+const Product:React.FC<ProductType> = ({ title, description, technicalDescription, url, github }) => {
   return (
     <div>Product</div>
   )
