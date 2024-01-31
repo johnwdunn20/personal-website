@@ -20,10 +20,10 @@ const Product: React.FC<ProductType> = ({
   github,
 }) => {
   return (
-    <section className={`flex flex-col w-full ${darkBackground ? "bg-slate-800" : "bg-slate-700"}`}>
+    <section className={`flex flex-col w-full p-4 ${darkBackground ? "bg-slate-800" : "bg-slate-700"}`}>
       {/* Text and Images */}
       <div
-        className='flex justify-around'
+        className='flex space-x-8 justify-around'
       >
         <article className="flex flex-col justify-between">
           {/* Text */}
@@ -33,12 +33,12 @@ const Product: React.FC<ProductType> = ({
         </article>
 
         {/* Image */}
-        <div className="pr-4">
+        <div className="pr-4 w-1/2">
           <Image
             src={placeHolderImage}
             alt="product image"
-            width={100}
-            height={100}
+            width={500}
+            height={500}
           />
         </div>
       </div>
