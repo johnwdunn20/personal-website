@@ -2,6 +2,7 @@ import Image from "next/image";
 import Product from "@components/Product";
 import Welcome from "@components/Welcome";
 import About from "@components/About";
+import Contact from "@components/Contact";
 
 export default function Home() {
 
@@ -43,6 +44,7 @@ export default function Home() {
         })}
       </div>
       <About/>
+      <Contact/>
     </main>
   );
 }
