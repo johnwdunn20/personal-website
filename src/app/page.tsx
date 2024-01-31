@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Product from "@components/Product";
 import Welcome from "@components/Welcome";
+import About from "@components/About";
 
 export default function Home() {
 
@@ -28,7 +29,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <Welcome/>
-      <div id="product" className="w-full">
+      <div id="open-source" className="w-full">
         {productData.map((product, index) => {
           return (
             <Product
@@ -41,6 +42,7 @@ export default function Home() {
           )
         })}
       </div>
+      <About/>
     </main>
   );
 }
