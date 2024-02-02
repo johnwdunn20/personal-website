@@ -69,7 +69,7 @@ console.log('imageURL', imageURL);
           href={website}
           target="_blank"
         >
-          <div className="relative h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
+          <div className="h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3">
             <svg
               className="fill-blue-500 group-hover:fill-gray-200 transition duration-150 ease-in-out"
               width="26"
@@ -82,9 +82,9 @@ console.log('imageURL', imageURL);
               />
             </svg>
           </div>
-          <div className="font-uncut-sans text-xl text-gray-100 font-semibold">
+          <p className="font-uncut-sans text-xl text-gray-100 font-semibold">
             Website
-          </div>
+          </p>
         </a> }
 
         {/* Github */}
