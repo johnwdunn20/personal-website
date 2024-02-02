@@ -63,10 +63,11 @@ console.log('imageURL', imageURL);
       </div>
       {/* Icons */}
       <div className="w-full grid gap-12 sm:grid-cols-2 md:grid-cols-6 sm:gap-x-6 sm:gap-y-8 items-center md:px-10 pt-5">
-        {/* website url*/}
-        <a
+        {/* website*/}
+        { website && <a
           className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group}`}
-          href="#0"
+          href={website}
+          target="_blank"
         >
           <div className="relative h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
             <svg
@@ -82,10 +83,11 @@ console.log('imageURL', imageURL);
             </svg>
           </div>
           <div className="font-uncut-sans text-xl text-gray-100 font-semibold">
-            Telegram
+            Website
           </div>
-        </a>
-        {/* 2nd Box */}
+        </a> }
+
+        {/* Github */}
         <a
           className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group`}
           href="#0"
