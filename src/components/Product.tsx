@@ -40,22 +40,22 @@ const Product: React.FC<ProductType> = ({
 
   return (
     <section
-      className={`flex flex-col w-full p-2 ${
+      className={`flex flex-col w-full p-2 pt-12 ${
         darkBackground ? "bg-slate-800" : "bg-slate-700"
       }`}
     >
       {/* Text and Images */}
       <div className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12">
-        <article className="flex flex-col justify-around w-1/3">
+        <article className="flex flex-col justify-around w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
           {/* Text */}
-          <h1 className="text-4xl font-bold text-center">{title}</h1>
-          <p className="">{description}</p>
-          <p>{technicalDescription}</p>
+          <h1 className="text-4xl font-bold text-center w-full">{title}</h1>
+          <p className="w-full my-4">{description}</p>
+          <p className="w-full my-4">{technicalDescription}</p>
         </article>
 
         {/* Image */}
         {imageURL && (
-          <div className=" flex justify-end">
+          <div className="flex justify-end">
             <Image
               src={imageURL}
               alt="product image"
