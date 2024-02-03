@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import placeHolderImage from "@assets/grocery.png";
 import github from "@assets/github.svg";
-import javascript from '@assets/technologies/javascript-logo.svg';
-import typescript from '@assets/technologies/typescript-logo.svg';
-import reactLogo from '@assets/technologies/react-logo.svg';
-import materialUILogo from '@assets/technologies/materialui-logo.svg';
+import javascript from "@assets/technologies/javascript-logo.svg";
+import typescript from "@assets/technologies/typescript-logo.svg";
+import reactLogo from "@assets/technologies/react-logo.svg";
+import materialUILogo from "@assets/technologies/materialui-logo.svg";
 
 type ProductType = {
   title: string;
@@ -59,21 +59,25 @@ const Product: React.FC<ProductType> = ({
           </h1>
           <p className="w-full my-4 text-xl text-slate-200">{description}</p>
           <ul className="ml-4 mt-4 list-none">
-            {bullets && bullets.map((bullet, index) => <li
-            key={index}
-            className="text-lg m-2 text-slate-200 relative pl-5 before:absolute before:bg-orange-500 before:rounded-full before:w-2 before:h-2 before:left-0 before:top-2 before:content-['']"
-            >{bullet}</li>)}
+            {bullets &&
+              bullets.map((bullet, index) => (
+                <li
+                  key={index}
+                  className="text-lg m-2 text-slate-200 relative pl-5 before:absolute before:bg-blue-600 before:rounded-full before:w-3 before:h-3 before:left-0 before:top-1.5 before:content-['']"
+                >
+                  {bullet}
+                </li>
+              ))}
           </ul>
           {/* <p className="w-full my-4 italic self-center ml-12 text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent">
             Built with:
           </p> */}
-          
+
           {/* Technologies */}
           <div className="flex flex-col justify-end h-full mt-4">
             <div className="flex justify-around flex-wrap">
-
               {/* Javascript */}
-              {technologies?.includes("javascript") && 
+              {technologies?.includes("javascript") && (
                 <a
                   href="https://www.javascript.com/"
                   target="_blank"
@@ -87,9 +91,9 @@ const Product: React.FC<ProductType> = ({
                     className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
                   />
                 </a>
-              }
+              )}
               {/* TypeScript */}
-              {technologies?.includes("typescript") && 
+              {technologies?.includes("typescript") && (
                 <a
                   href="https://www.typescriptlang.org/"
                   target="_blank"
@@ -103,9 +107,9 @@ const Product: React.FC<ProductType> = ({
                     className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
                   />
                 </a>
-              }
+              )}
               {/* React */}
-              {technologies?.includes("react") && 
+              {technologies?.includes("react") && (
                 <a
                   href="https://react.dev/"
                   target="_blank"
@@ -119,9 +123,9 @@ const Product: React.FC<ProductType> = ({
                     className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
                   />
                 </a>
-              }
+              )}
               {/* MaterilUI */}
-              {technologies?.includes("materialui") && 
+              {technologies?.includes("materialui") && (
                 <a
                   href="https://mui.com/"
                   target="_blank"
@@ -135,8 +139,7 @@ const Product: React.FC<ProductType> = ({
                     className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
                   />
                 </a>
-              }
-
+              )}
             </div>
           </div>
         </article>
@@ -166,7 +169,7 @@ const Product: React.FC<ProductType> = ({
           >
             <div className="h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex flex-col items-center justify-center shadow-lg mb-3">
               <svg
-                className="fill-blue-500 group-hover:fill-gray-200 transition duration-150 ease-in-out"
+                className="fill-gray-200 group-hover:fill-blue-500 transition duration-150 ease-in-out"
                 width="26"
                 height="18"
                 xmlns="http://www.w3.org/2000/svg"
@@ -186,13 +189,13 @@ const Product: React.FC<ProductType> = ({
         {/* Github */}
         {github && (
           <a
-            className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group flex flex-col items-center justify-center`}
+            className="block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group flex flex-col items-center justify-center"
             href={github}
             target="_blank"
           >
-            <div className="relative h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
+            <div className="relative h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3 group-hover:scale-110 transition-transform duration-150 ease-in-out">
               <svg
-                className="fill-blue-500 group-hover:fill-gray-200 transition duration-150 ease-in-out"
+                className="fill-gray-200 group-hover:fill-blue-500 transition-all duration-150 ease-in-out"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +206,7 @@ const Product: React.FC<ProductType> = ({
                 />
               </svg>
             </div>
-            <div className="font-uncut-sans text-xl text-gray-100 font-semibold">
+            <div className="font-uncut-sans text-xl text-gray-200 font-semibold group-hover:text-blue-500 group-hover:scale-110 transition-all duration-150 ease-in-out">
               GitHub
             </div>
           </a>
@@ -218,7 +221,7 @@ const Product: React.FC<ProductType> = ({
           >
             <div className="relative h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
               <svg
-                className="fill-blue-500 group-hover:fill-gray-200 transition duration-150 ease-in-out"
+                className="fill-gray-200 group-hover:fill-blue-500 transition duration-150 ease-in-out"
                 width="22"
                 height="22"
                 xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +232,7 @@ const Product: React.FC<ProductType> = ({
                 />
               </svg>
             </div>
-            <div className="font-uncut-sans text-xl text-gray-100 font-semibold">
+            <div className="font-uncut-sans text-xl text-gray-200 font-semibold hover:text-blue-500">
               Medium
             </div>
           </a>
