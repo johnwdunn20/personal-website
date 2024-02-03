@@ -89,7 +89,7 @@ const Product: React.FC<ProductType> = ({
                 />
               </svg>
             </div>
-            <p className="font-uncut-sans text-xl text-gray-100 font-semibold">
+            <p className="font-uncut-sans text-xl text-gray-100 font-semibold hover:text-blue-500">
               Website
             </p>
           </a>
