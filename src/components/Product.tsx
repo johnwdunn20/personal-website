@@ -151,13 +151,11 @@ const Product: React.FC<ProductType> = ({
       </div>
       {/* Icons */}
       <div className="flex justify-center items-center flex-wrap sm:gap-2 md:gap-8 lg:gap-12">
-          {/* New as separate component */}
           {externalLinks && externalLinks.map( (obj, index) => <ExternalLink
             key={index}
             type={obj.type}
             url={obj.url}
           />)}
-
       </div>
     </section>
   );

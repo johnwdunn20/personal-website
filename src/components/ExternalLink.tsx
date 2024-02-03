@@ -20,7 +20,7 @@ const ExternalLink: React.FC<ExternalLinkType> = ({url, type}) => {
 
   return (
     <a
-    className="block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group flex flex-col items-center justify-center"
+    className="block relative before:content-['']before:absolute before:-z-10 before:inset-0 p-6 group flex flex-col items-center justify-center"
     href={url}
     target="_blank"
   >
