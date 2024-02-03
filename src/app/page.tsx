@@ -20,6 +20,32 @@ export default function Home() {
         'typescript',
         'materialui',
       ],
+      externalLinks: [
+        {
+          type: 'website',
+          url: "https://www.reactqueryrewind.com/",
+        },
+        {
+          type: 'github',
+          url: "https://github.com/oslabs-beta/react-query-rewind",
+        },
+        {
+          type: 'npm',
+          url: "https://www.npmjs.com/package/react-query-rewind",
+        },
+        {
+          type: 'chrome',
+          url: "https://chromewebstore.google.com/detail/rqrewind/jfljppnfglpckkgkpmdpgagnffloboel",
+        },
+        {
+          type: 'medium',
+          url: "https://medium.com/@teeringe/react-query-rewind-time-travel-debugging-made-simple-46aaeeafd497",
+        },
+        {
+          type: 'linkedIn',
+          url: "https://www.linkedin.com/company/react-query-rewind/about",
+        },
+      ],
       website: "https://www.reactqueryrewind.com/",
       github: "https://github.com/oslabs-beta/react-query-rewind",
       npm: "https://www.npmjs.com/package/react-query-rewind",
@@ -53,6 +79,8 @@ export default function Home() {
               description={product.description}
               bullets={product.bullets}
               technologies={product.technologies}
+              externalLinks={product.externalLinks}
+
               website={product.website}
               websiteSVG={product.websiteSVG}
               github = {product.github}

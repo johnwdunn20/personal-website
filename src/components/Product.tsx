@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import ExternalLink from "./ExternalLink";
+import TechnologyIcon from "./TechnologyIcon";
+
 import placeHolderImage from "@assets/grocery.png";
 import github from "@assets/github.svg";
 import javascript from "@assets/technologies/javascript-logo.svg";
@@ -7,12 +10,15 @@ import typescript from "@assets/technologies/typescript-logo.svg";
 import reactLogo from "@assets/technologies/react-logo.svg";
 import materialUILogo from "@assets/technologies/materialui-logo.svg";
 
+
+
 type ProductType = {
   title: string;
   description: string;
   bullets?: string[];
   technologies?: string[];
   darkBackground: boolean;
+  externalLinks: any;
   website?: string;
   websiteSVG?: string;
   github?: string;
@@ -31,6 +37,7 @@ const Product: React.FC<ProductType> = ({
   bullets,
   technologies,
   darkBackground,
+  externalLinks,
   website,
   websiteSVG,
   github,
@@ -160,6 +167,13 @@ const Product: React.FC<ProductType> = ({
       {/* Icons */}
       {/* <div className="w-full grid gap-12 sm:grid-cols-2 md:grid-cols-6 sm:gap-x-6 sm:gap-y-8 items-center md:px-10 pt-5"> */}
       <div className="flex justify-center items-center flex-wrap sm:gap-2 md:gap-8 lg:gap-12">
+          {/* New as separate component */}
+          {externalLinks && externalLinks.map( (obj, index) => <ExternalLink
+            key={index}
+            type={obj.type}
+            url={obj.url}
+          />)}
+
         {/* website*/}
         {website && (
           <a
@@ -193,9 +207,9 @@ const Product: React.FC<ProductType> = ({
             href={github}
             target="_blank"
           >
-            <div className="relative h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3 group-hover:scale-110 transition-transform duration-150 ease-in-out">
+            <div className="relative h-12 w-12 rounded-full bg-gradient-to-t from-gray-800 to-gray-700 flex items-center justify-center shadow-lg mb-3 group-hover:scale-110 transition-transform duration-200 ease-in-out">
               <svg
-                className="fill-gray-200 group-hover:fill-blue-500 transition-all duration-150 ease-in-out"
+                className="fill-gray-200 shadow-lg group-hover:fill-blue-500 transition-all duration-200 ease-in-out"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +220,7 @@ const Product: React.FC<ProductType> = ({
                 />
               </svg>
             </div>
-            <div className="font-uncut-sans text-xl text-gray-200 font-semibold group-hover:text-blue-500 group-hover:scale-110 transition-all duration-150 ease-in-out">
+            <div className="font-uncut-sans shadow-lg text-xl text-gray-200 font-semibold group-hover:text-blue-500 group-hover:scale-110 transition-all duration-200 ease-in-out">
               GitHub
             </div>
           </a>
