@@ -10,7 +10,7 @@ export default function Home() {
     {
       title:"React Query Rewind",
       description: "React Query Rewind allows developers using the state management tool React Query to time travel state directly in their browser. Simply install the Chrome extension, NPM Package, and place the custom component as close to the root of your application as possible",
-      technicalDescription: "NPM Package and Chrome Extension",
+      technicalDescription: "Built with TypeScript, React, & MaterialUI",
       website: "https://www.reactqueryrewind.com/",
       github: "https://github.com/oslabs-beta/react-query-rewind",
       npm: "https://www.npmjs.com/package/react-query-rewind",

@@ -48,7 +48,7 @@ const Product: React.FC<ProductType> = ({
       <div className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12">
         <article className="flex flex-col justify-around w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
           {/* Text */}
-          <h1 className="text-4xl font-bold text-center w-full">{title}</h1>
+          <h1 className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">{title}</h1>
           <p className="w-full my-4">{description}</p>
           <p className="w-full my-4">{technicalDescription}</p>
         </article>
@@ -89,7 +89,7 @@ const Product: React.FC<ProductType> = ({
                 />
               </svg>
             </div>
-            <p className="font-uncut-sans text-xl text-gray-100 font-semibold hover:text-blue-500">
+            <p className="font-uncut-sans text-xl text-gray-200 font-semibold hover:text-blue-500">
               Website
             </p>
           </a>
