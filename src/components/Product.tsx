@@ -22,16 +22,7 @@ type ProductType = {
     type: string;
     url: string;
   }[];
-  website?: string;
-  websiteSVG?: string;
-  github?: string;
-  npm?: string;
-  chrome?: string;
-  medium?: string;
-  linkedIn?: string;
   imageURL?: string;
-  docs?: string;
-  tutorial?: string;
 };
 
 const Product: React.FC<ProductType> = ({
@@ -41,15 +32,6 @@ const Product: React.FC<ProductType> = ({
   technologies,
   darkBackground,
   externalLinks,
-  website,
-  websiteSVG,
-  github,
-  npm,
-  chrome,
-  medium,
-  linkedIn,
-  docs,
-  tutorial,
   imageURL,
 }) => {
   console.log("imageURL", imageURL);

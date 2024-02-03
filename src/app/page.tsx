@@ -46,12 +46,6 @@ export default function Home() {
           url: "https://www.linkedin.com/company/react-query-rewind/about",
         },
       ],
-      website: "https://www.reactqueryrewind.com/",
-      github: "https://github.com/oslabs-beta/react-query-rewind",
-      npm: "https://www.npmjs.com/package/react-query-rewind",
-      chrome: "https://chromewebstore.google.com/detail/rqrewind/jfljppnfglpckkgkpmdpgagnffloboel",
-      medium: "https://medium.com/@teeringe/react-query-rewind-time-travel-debugging-made-simple-46aaeeafd497",
-      linkedIn: "https://www.linkedin.com/company/react-query-rewind/about",
       imageURL: 'https://i.imgur.com/vfeEMJV.gif'
     },
     {
@@ -80,16 +74,7 @@ export default function Home() {
               bullets={product.bullets}
               technologies={product.technologies}
               externalLinks={product.externalLinks}
-
-              website={product.website}
-              github = {product.github}
-              npm = {product.npm}
-              chrome = {product.chrome}
-              medium = {product.medium}
-              linkedIn = {product.linkedIn}
               imageURL = {product.imageURL}
-
-
               darkBackground={index % 2 === 0}
             />
           )
