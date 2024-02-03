@@ -22,27 +22,27 @@ export default function Home() {
       ],
       externalLinks: [
         {
-          type: 'website',
+          type: 'Website',
           url: "https://www.reactqueryrewind.com/",
         },
         {
-          type: 'github',
+          type: 'GitHub',
           url: "https://github.com/oslabs-beta/react-query-rewind",
         },
         {
-          type: 'npm',
+          type: 'NPM',
           url: "https://www.npmjs.com/package/react-query-rewind",
         },
         {
-          type: 'chrome',
+          type: 'Chrome',
           url: "https://chromewebstore.google.com/detail/rqrewind/jfljppnfglpckkgkpmdpgagnffloboel",
         },
         {
-          type: 'medium',
+          type: 'Medium',
           url: "https://medium.com/@teeringe/react-query-rewind-time-travel-debugging-made-simple-46aaeeafd497",
         },
         {
-          type: 'linkedIn',
+          type: 'LinkedIn',
           url: "https://www.linkedin.com/company/react-query-rewind/about",
         },
       ],
