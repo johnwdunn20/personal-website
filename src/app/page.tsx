@@ -82,7 +82,6 @@ export default function Home() {
               externalLinks={product.externalLinks}
 
               website={product.website}
-              websiteSVG={product.websiteSVG}
               github = {product.github}
               npm = {product.npm}
               chrome = {product.chrome}
