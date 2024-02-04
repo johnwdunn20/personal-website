@@ -50,15 +50,48 @@ export default function Home() {
     },
     {
       title:"Super Market Sorter",
-      description: "Description for Super Market Sorter",
-      technicalDescription: "NPM Package and Chrome Extension",
-      github: "url",
+      description: "Automatically sort groceries by aisle",
+      bullets: [
+        'Enter your grocery list and watch it sort',
+        'Check off items as you shop'
+      ],
+      technologies: [
+        'react',
+        'typescript',
+        'materialui',
+      ],
+      externalLinks: [
+        {
+          type: 'Website',
+          url: "https://www.supermarketsorter.com/",
+        },
+        {
+          type: 'GitHub',
+          url: "https://github.com/johnwdunn20/grocery-list",
+        },
+      ],
+      imageURL: ''
     },
     {
-      title:"React Query Rewind",
-      description: "Description for RQRewind",
-      technicalDescription: "NPM Package and Chrome Extension",
-      github: "url",
+      title:"React JsonDiffPatch",
+      description: "Displays json diffs in a human readable format and allows users to toggle nodes open and closed",
+      bullets: [
+        'Install the NPM package',
+        'Use the custom component to display diffs',
+      ],
+      technologies: [
+
+      ],
+      externalLinks: [
+        {
+          type: 'GitHub',
+          url: ''
+        },
+        {
+          type: 'NPM',
+          url: "",
+        },
+      ]
     }
   ]
 
