@@ -10,7 +10,6 @@ const Nav = () => {
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
 
-
   if (typeof window !== 'undefined') { // handles SSR
     window.onscroll = () => {
       const currentScrollPos = window.scrollY;
