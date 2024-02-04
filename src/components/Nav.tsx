@@ -3,8 +3,10 @@
 import React from "react";
 
 const Nav = () => {
+  // Ideally Nav bar moves at the speed the user scrolls - this is simple right now
+
   // Navigation bar should dissapear when scrolling down and reappear when scrolling up
-  // ** Needs to be transition
+  
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
 

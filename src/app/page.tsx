@@ -58,7 +58,6 @@ export default function Home() {
       technologies: [
         'react',
         'typescript',
-        'materialui',
       ],
       externalLinks: [
         {
@@ -80,7 +79,8 @@ export default function Home() {
         'Use the custom component to display diffs',
       ],
       technologies: [
-
+        'react',
+        'typescript'
       ],
       externalLinks: [
         {
