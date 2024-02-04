@@ -10,8 +10,6 @@ import typescript from "@assets/technologies/typescript-logo.svg";
 import reactLogo from "@assets/technologies/react-logo.svg";
 import materialUILogo from "@assets/technologies/materialui-logo.svg";
 
-
-
 type ProductType = {
   title: string;
   description: string;
@@ -34,7 +32,8 @@ const Product: React.FC<ProductType> = ({
   externalLinks,
   imageURL,
 }) => {
-  console.log("imageURL", imageURL);
+  // console.log("imageURL", imageURL);
+  console.log("technologies: ", technologies);
 
   return (
     <section
@@ -68,70 +67,12 @@ const Product: React.FC<ProductType> = ({
           {/* Technologies */}
           <div className="flex flex-col justify-end h-full mt-4">
             <div className="flex justify-around flex-wrap">
-              {/* Javascript */}
-              {technologies?.includes("javascript") && (
-                <a
-                  href="https://www.javascript.com/"
-                  target="_blank"
-                  className="transform hover:scale-110 transition duration-300 ease-in-out"
-                >
-                  <Image
-                    src={javascript}
-                    alt="JavaScript"
-                    width={140}
-                    height={50}
-                    className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
-                  />
-                </a>
-              )}
-              {/* TypeScript */}
-              {technologies?.includes("typescript") && (
-                <a
-                  href="https://www.typescriptlang.org/"
-                  target="_blank"
-                  className="transform hover:scale-110 transition duration-300 ease-in-out"
-                >
-                  <Image
-                    src={typescript}
-                    alt="TypeScript"
-                    width={140}
-                    height={50}
-                    className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
-                  />
-                </a>
-              )}
-              {/* React */}
-              {technologies?.includes("react") && (
-                <a
-                  href="https://react.dev/"
-                  target="_blank"
-                  className="transform hover:scale-110 transition duration-300 ease-in-out"
-                >
-                  <Image
-                    src={reactLogo}
-                    alt="React"
-                    width={140}
-                    height={50}
-                    className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
-                  />
-                </a>
-              )}
-              {/* MaterilUI */}
-              {technologies?.includes("materialui") && (
-                <a
-                  href="https://mui.com/"
-                  target="_blank"
-                  className="transform hover:scale-110 transition duration-300 ease-in-out"
-                >
-                  <Image
-                    src={materialUILogo}
-                    alt="MaterialUI"
-                    width={140}
-                    height={50}
-                    className="rounded-lg shadow-2xl hover:shadow-inner transition-shadow duration-200 ease-in-out"
-                  />
-                </a>
-              )}
+              
+              {technologies &&
+                technologies.map((tech, index) => (
+                  <TechnologyIcon key={index} technology={tech} />
+                ))}
+              
             </div>
           </div>
         </article>
@@ -151,11 +92,10 @@ const Product: React.FC<ProductType> = ({
       </div>
       {/* Icons */}
       <div className="flex justify-center items-center flex-wrap sm:gap-2 md:gap-8 lg:gap-12">
-          {externalLinks && externalLinks.map( (obj, index) => <ExternalLink
-            key={index}
-            type={obj.type}
-            url={obj.url}
-          />)}
+        {externalLinks &&
+          externalLinks.map((obj, index) => (
+            <ExternalLink key={index} type={obj.type} url={obj.url} />
+          ))}
       </div>
     </section>
   );

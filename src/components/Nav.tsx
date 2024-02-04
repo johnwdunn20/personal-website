@@ -7,14 +7,18 @@ const Nav = () => {
   // ** Needs to be transition
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
-  window.onscroll = () => {
-    const currentScrollPos = window.scrollY;
-    setVisible(prevScrollPos > currentScrollPos);
-    setPrevScrollPos(currentScrollPos);
+
+
+  if (typeof window !== 'undefined') { // handles SSR
+    window.onscroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos);
+      setPrevScrollPos(currentScrollPos);
+    }
   }
 
   return (
-    <nav className={`p-2 text-white bg-fuchsia-400 bg-opacity-75 sticky z-10 ${visible ? 'top-0' : ''}`}>
+    <nav className={`p-2 text-white bg-slate-900 bg-opacity-90 sticky z-10 ${visible ? 'top-0' : ''}`}>
       <ul className="flex flex-wrap justify-end w-full">
         <li className="ml-4 mr-2 rounded-lg bg-purple-700 py-2 px-4 cursor-pointer shadow-lg hover:bg-purple-500">
           <a href="#open-source">Open Source</a>
