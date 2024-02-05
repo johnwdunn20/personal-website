@@ -20,6 +20,8 @@ export default function Home() {
         'react',
         'typescript',
         'materialui',
+        'webpack',
+        'rollup',
       ],
       externalLinks: [
         {
@@ -59,7 +61,11 @@ export default function Home() {
       ],
       technologies: [
         'react',
+        'express',
+        'mongodb',
         'typescript',
+        'tailwindcss',
+        'webpack',
       ],
       externalLinks: [
         {
@@ -124,9 +130,9 @@ export default function Home() {
         'TBD',
       ],
       technologies: [
-        'NextJS',
-        'TypeScript',
-        'TailwindCSS',
+        'nextjs',
+        'typescript',
+        'tailwindcss',
       ],
       externalLinks: [
         {
