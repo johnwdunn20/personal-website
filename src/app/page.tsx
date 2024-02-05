@@ -7,6 +7,7 @@ import Contact from "@components/Contact";
 export default function Home() {
 
   const productData = [
+    // React Query Rewind
     {
       title:"React Query Rewind",
       description: "React Query Rewind allows developers using the state management tool React Query to time travel state directly in their browser",
@@ -48,6 +49,7 @@ export default function Home() {
       ],
       imageURL: 'https://i.imgur.com/vfeEMJV.gif'
     },
+    // Super Market Sorter
     {
       title:"Super Market Sorter",
       description: "Automatically sort groceries by aisle",
@@ -71,6 +73,7 @@ export default function Home() {
       ],
       imageURL: ''
     },
+    // React JsonDiffPatch
     {
       title:"React JsonDiffPatch",
       description: "Displays json diffs in a human readable format and allows users to toggle nodes open and closed",
@@ -92,7 +95,46 @@ export default function Home() {
           url: "",
         },
       ]
-    }
+    },
+    // PGAdmin AI
+    {
+      title:"pgAdmin AI",
+      description: "Use AI to automatically generate SQL queries",
+      bullets: [
+        'Add your OpenAI API key',
+        'Watch the AI generate SQL queries for you',
+        'Forked from pgAdmin4',
+      ],
+      technologies: [
+        'python',
+        'django'
+      ],
+      externalLinks: [
+        {
+          type: 'GitHub',
+          url: ''
+        },
+      ]
+    },
+    // Social Media
+    {
+      title:"Social Media Placeholder",
+      description: "Exploring integrations in NextJS",
+      bullets: [
+        'TBD',
+      ],
+      technologies: [
+        'NextJS',
+        'TypeScript',
+        'TailwindCSS',
+      ],
+      externalLinks: [
+        {
+          type: 'GitHub',
+          url: ''
+        },
+      ]
+    },
   ]
 
   return (
