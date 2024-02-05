@@ -32,8 +32,6 @@ const Product: React.FC<ProductType> = ({
   externalLinks,
   imageURL,
 }) => {
-  // console.log("imageURL", imageURL);
-  console.log("technologies: ", technologies);
 
   return (
     <section

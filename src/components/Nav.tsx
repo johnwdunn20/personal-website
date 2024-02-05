@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import Link from "next/link";
 
 const Nav = () => {
   // Ideally Nav bar moves at the speed the user scrolls - this is simple right now

@@ -14,8 +14,7 @@ type TechnologyIconType = {
 
 const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
 
-  console.log('technology: ', technology);
-
+  
   const urls = {
     javascript: "https://www.javascript.com/",
     typescript: "https://www.typescriptlang.org/",
@@ -25,6 +24,9 @@ const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
     webpack: "https://webpack.js.org/",
   }
 
+  // Log messages to make it easier to find missing technologies
+  if (!(technology in urls)) console.error(`**** Technology ${technology} not found in TechnologyIcon ****`);
+  
   if (technology in urls) {
     return (
       <a
