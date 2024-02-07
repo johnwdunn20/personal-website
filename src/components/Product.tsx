@@ -10,6 +10,8 @@ import typescript from "@assets/technologies/typescript-logo.svg";
 import reactLogo from "@assets/technologies/react-logo.svg";
 import materialUILogo from "@assets/technologies/materialui-logo.svg";
 
+import { svgPathD } from "@utils/externalLinkSVGPaths";
+
 type ProductType = {
   title: string;
   description: string;
@@ -17,7 +19,7 @@ type ProductType = {
   technologies?: string[];
   darkBackground: boolean;
   externalLinks?: {
-    type: string;
+    type: keyof typeof svgPathD;
     url: string;
   }[];
   imageURL?: string;

@@ -15,7 +15,7 @@ const About = () => {
         />
       </div>
       <br />
-      <p>I'm John, and I'm passionate about building great products</p>
+      <p>{`I'm John, and I'm passionate about building great products. I spent 5 years in health tech as a developer and product manager`}</p>
     </section>
   )
 }
