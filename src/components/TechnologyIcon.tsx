@@ -33,7 +33,7 @@ const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
             : technology === "react"
             ? '/assets/technologies/react-logo.svg'
             : technology === "materialui"
-            ? '/assets/technologies/materialui-logo.svg'
+            ? '/assets/technologies/material-logo.svg'
             : technology === "tailwindcss"
             ? '/assets/technologies/tailwind-logo.svg'
             : technology === "webpack"
