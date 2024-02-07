@@ -1,10 +1,11 @@
 import { svgPathD } from "./externalLinkSVGPaths"
+import { technologyURLs } from "./technologyURLs"
 
 export type ProductDataType = {
   title: string,
   description: string,
   bullets: string[],
-  technologies: string[],
+  technologies: (keyof typeof technologyURLs)[],
   externalLinks: {
     type: keyof typeof svgPathD,
     url: string,
@@ -26,6 +27,7 @@ export const productData: ProductDataType[] = [
       'react',
       'typescript',
       'materialui',
+      'npm',
       'webpack',
       'rollup',
     ],
@@ -66,12 +68,17 @@ export const productData: ProductDataType[] = [
       'Check off items as you shop'
     ],
     technologies: [
-      'react',
+      'nextjs',
+      'nodejs',
+      'tsnode',
       'express',
       'mongodb',
       'typescript',
       'tailwindcss',
+      'jwt',
       'webpack',
+      'aws',
+      'docker',
     ],
     externalLinks: [
       {
