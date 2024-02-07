@@ -17,13 +17,11 @@ const Nav = () => {
     };
 
     const windowWidth = window.innerWidth;
-  
-    if (windowWidth < 500) {
-      return (<></>)
-    }
-    
-  }
 
+    if (windowWidth < 500) {
+      return <></>;
+    }
+  }
 
   return (
     <nav
@@ -31,17 +29,17 @@ const Nav = () => {
         visible ? "top-0" : ""
       }`}
     >
-  <ul className="flex flex-wrap justify-end w-full">
-    <li className="ml-4 mr-2 rounded-lg bg-violet-700 py-2 px-4 cursor-pointer shadow-lg hover:bg-violet-500">
-      <a href="#open-source">Open Source</a>
-    </li>
-    <li className="ml-4 rounded-lg bg-violet-700 py-2 px-4 cursor-pointer shadow-lg hover:bg-violet-500">
-      <a href="#about">About</a>
-    </li>
-    <li className="ml-4 mr-2 rounded-lg bg-violet-700 py-2 px-4 cursor-pointer shadow-lg hover:bg-violet-500">
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
+      <ul className="flex flex-wrap justify-end w-full">
+        <li className="ml-4 mr-2 rounded-lg py-2 px-4 cursor-pointer shadow-lg gradient-non-hover gradient-hover">
+          <a href="#open-source">Open Source</a>
+        </li>
+        <li className="ml-4 mr-2 rounded-lg py-2 px-4 cursor-pointer shadow-lg gradient-non-hover gradient-hover">
+          <a href="#about">About</a>
+        </li>
+        <li className="ml-4 mr-2 rounded-lg py-2 px-4 cursor-pointer shadow-lg gradient-non-hover gradient-hover gradient-hover">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
   );
 };

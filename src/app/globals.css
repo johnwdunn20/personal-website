@@ -30,6 +30,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* .hover-gradient:hover {
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+} */
+
+.gradient-non-hover {
+  background-image: linear-gradient(to right, #6b46c1, #b83280, #c056d0); /* Darker gradient */
+}
+
+.gradient-hover:hover {
+  background-image: linear-gradient(to right, #9f7aea, #ed64a6, #d53f8c); /* Lighter gradient */
+}
+
+/* Optional: Smooth transition */
+.gradient-non-hover, .gradient-hover {
+  transition: background-image 0.5s ease-in-out;
+}
+
 /*@layer utilities {
   .text-balance {
     text-wrap: balance;
