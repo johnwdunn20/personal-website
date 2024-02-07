@@ -40,7 +40,7 @@ const About = () => {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="fill-blue-600 shadow-lg group-hover:fill-blue-400 mr-2"
+              className="fill-blue-600 shadow-lg group-hover:fill-blue-500 mr-2"
             >
             
                 <path
@@ -72,7 +72,7 @@ const About = () => {
                 ></path>{" "}
             </svg>
           </div>
-          <div className="font-uncut-sans shadow-lg text-blue-600 font-semibold group-hover:text-blue-400 text-2xl ml-2 mb-2">
+          <div className="font-uncut-sans shadow-lg text-blue-600 font-semibold group-hover:text-blue-500 text-2xl ml-2 mb-2">
             Download Resume
           </div>
         </a>

@@ -8,10 +8,10 @@ const EmailLink = () => {
   const handleCopy = () => {
     setCopied(true);
     navigator.clipboard.writeText("johnwdunn20@gmail.com");
-    // reset copy after 1 second
+    // reset copy after 3 seconds
     setTimeout(() => {
       setCopied(false);
-    }, 1000);
+    }, 3000);
   };
 
   return (
@@ -20,7 +20,8 @@ const EmailLink = () => {
         className="text-2xl text-purple-500 hover:text-purple-300 mr-4"
         href="mailto:your.johnwdunn20@gmail.com"
       >
-        Email: Johnwdunn20@gmail.com
+        <span className="font-bold">Email: </span>
+        <span className="italic">johnwdunn20@gmail.com</span>
       </a>
       <div className='ml-2' onClick={handleCopy}>
             <Image
