@@ -1,28 +1,6 @@
 import React from 'react'
 import Image from "next/image";
 
-// Import technology logos
-import javascriptLogo from "@assets/technologies/javascript-logo.svg";
-import typescriptLogo from "@assets/technologies/typescript-logo.svg";
-import reactLogo from "@assets/technologies/react-logo.svg";
-import materialUILogo from "@assets/technologies/materialui-logo.svg";
-import tailwindLogo from "@assets/technologies/tailwind-logo.svg";
-import webpackLogo from "@assets/technologies/webpack-logo.svg";
-import djangoLogo from "@assets/technologies/django-logo.svg";
-import expressLogo from "@assets/technologies/express-logo.svg";
-import rollupLogo from "@assets/technologies/rollup-logo.svg";
-import mongodbLogo from "@assets/technologies/mongodb-logo.svg";
-import awsLogo from "@assets/technologies/aws-logo.svg";
-import dockerLogo from "@assets/technologies/docker-logo.svg";
-import vercelLogo from "@assets/technologies/vercel-logo.svg";
-import jwtLogo from "@assets/technologies/jwt-logo.svg";
-import jupyterLogo from "@assets/technologies/jupyter-logo.svg";
-import nextjsLogo from "@assets/technologies/nextjs-logo.svg";
-import nodejsLogo from "@assets/technologies/nodejs-logo.svg";
-import tsnodeLogo from "@assets/technologies/tsnode-logo.svg";
-import npmLogo from "@assets/technologies/npm-logo.svg";
-import pythonLogo from "@assets/technologies/python-logo.svg";
-
 
 // types
 import { technologyURLs } from '@utils/technologyURLs';
@@ -49,45 +27,45 @@ const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
       <Image
         src={
           technology === "javascript"
-            ? javascriptLogo
+            ? '/assets/technologies/javascript-logo.svg'
             : technology === "typescript"
-            ? typescriptLogo
+            ? '/assets/technologies/typescript-logo.svg'
             : technology === "react"
-            ? reactLogo
+            ? '/assets/technologies/react-logo.svg'
             : technology === "materialui"
-            ? materialUILogo
+            ? '/assets/technologies/materialui-logo.svg'
             : technology === "tailwindcss"
-            ? tailwindLogo
+            ? '/assets/technologies/tailwind-logo.svg'
             : technology === "webpack"
-            ? webpackLogo
+            ? '/assets/technologies/webpack-logo.svg'
             : technology === "django"
-            ? djangoLogo
+            ? '/assets/technologies/django-logo.svg'
             : technology === "express"
-            ? expressLogo
+            ? '/assets/technologies/express-logo.svg'
             : technology === "rollup"
-            ? rollupLogo
+            ? '/assets/technologies/rollup-logo.svg'
             : technology === "mongodb"
-            ? mongodbLogo
+            ? '/assets/technologies/mongodb-logo.svg'
             : technology === "aws"
-            ? awsLogo
+            ? '/assets/technologies/aws-logo.svg'
             : technology === "docker"
-            ? dockerLogo
+            ? '/assets/technologies/docker-logo.svg'
             : technology === "vercel"
-            ? vercelLogo
+            ? '/assets/technologies/vercel-logo.svg'
             : technology === "jwt"
-            ? jwtLogo
+            ? '/assets/technologies/jwt-logo.svg'
             : technology === "jupyter"
-            ? jupyterLogo
+            ? '/assets/technologies/jupyter-logo.svg'
             : technology === "nextjs"
-            ? nextjsLogo
+            ? '/assets/technologies/nextjs-logo.svg'
             : technology === "nodejs"
-            ? nodejsLogo
+            ? '/assets/technologies/nodejs-logo.svg'
             : technology === "npm"
-            ? npmLogo
+            ? '/assets/technologies/npm-logo.svg'
             : technology === "python"
-            ? pythonLogo
+            ? '/assets/technologies/python-logo.svg'
             : technology === "tsnode"
-            ? tsnodeLogo
+            ? '/assets/technologies/tsnode-logo.svg'
             : ""
           }
         alt={technology}
