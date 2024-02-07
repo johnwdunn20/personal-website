@@ -8,11 +8,6 @@ const nextConfig = {
         port: '',
 
       },
-      {
-        protocol: 'https',
-        hostname: 'img.shields.io',
-        port: '',
-      }
     ],
   },
 };

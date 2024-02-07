@@ -10,7 +10,12 @@ export type ProductDataType = {
     type: keyof typeof svgPathD,
     url: string,
   }[],
-  imageURL?: string,
+  image?: {
+    url: string,
+    alt: string,
+    height: number,
+    width: number
+  },
 }
 
 export const productData: ProductDataType[] = [
@@ -57,25 +62,29 @@ export const productData: ProductDataType[] = [
         url: "https://www.linkedin.com/company/react-query-rewind/about",
       },
     ],
-    imageURL: 'https://i.imgur.com/vfeEMJV.gif'
+    image: {
+      url: 'https://i.imgur.com/vfeEMJV.gif',
+      alt: 'React Query Rewind',
+      height: 800,
+      width: 800
+    }
   },
   // Super Market Sorter
   {
     title:"Super Market Sorter",
-    description: "Automatically sort groceries by aisle",
+    description: "Mobile-first web app that automatically sorts grocery items by aisle",
     bullets: [
       'Enter your grocery list and watch it sort',
       'Check off items as you shop'
     ],
     technologies: [
-      'nextjs',
-      'nodejs',
+      'react',
+      'tailwindcss',
+      'typescript',
       'tsnode',
+      'jwt',
       'express',
       'mongodb',
-      'typescript',
-      'tailwindcss',
-      'jwt',
       'webpack',
       'aws',
       'docker',
@@ -90,7 +99,12 @@ export const productData: ProductDataType[] = [
         url: "https://github.com/johnwdunn20/grocery-list",
       },
     ],
-    imageURL: ''
+    image: {
+      url: 'https://i.imgur.com/cCR8VHI.gif',
+      alt: 'Super Market Sorter',
+      height: 300,
+      width: 250
+    }
   },
   // React JsonDiffPatch
   {
@@ -116,42 +130,42 @@ export const productData: ProductDataType[] = [
     ]
   },
   // PGAdmin AI
-  {
-    title:"pgAdmin AI",
-    description: "Use AI to automatically generate SQL queries",
-    bullets: [
-      'Add your OpenAI API key',
-      'Watch the AI generate SQL queries for you',
-      'Forked from pgAdmin4',
-    ],
-    technologies: [
-      'python',
-      'django'
-    ],
-    externalLinks: [
-      {
-        type: 'GitHub',
-        url: ''
-      },
-    ]
-  },
-  // Social Media
-  {
-    title:"Social Media Placeholder",
-    description: "Exploring integrations in NextJS",
-    bullets: [
-      'TBD',
-    ],
-    technologies: [
-      'nextjs',
-      'typescript',
-      'tailwindcss',
-    ],
-    externalLinks: [
-      {
-        type: 'GitHub',
-        url: ''
-      },
-    ]
-  },
+  // {
+  //   title:"pgAdmin AI",
+  //   description: "Use AI to automatically generate SQL queries",
+  //   bullets: [
+  //     'Add your OpenAI API key',
+  //     'Watch the AI generate SQL queries for you',
+  //     'Forked from pgAdmin4',
+  //   ],
+  //   technologies: [
+  //     'python',
+  //     'django'
+  //   ],
+  //   externalLinks: [
+  //     {
+  //       type: 'GitHub',
+  //       url: ''
+  //     },
+  //   ]
+  // },
+  // // Social Media
+  // {
+  //   title:"Social Media Placeholder",
+  //   description: "Exploring integrations in NextJS",
+  //   bullets: [
+  //     'TBD',
+  //   ],
+  //   technologies: [
+  //     'nextjs',
+  //     'typescript',
+  //     'tailwindcss',
+  //   ],
+  //   externalLinks: [
+  //     {
+  //       type: 'GitHub',
+  //       url: ''
+  //     },
+  //   ]
+  // },
 ]

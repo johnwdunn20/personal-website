@@ -20,7 +20,7 @@ export default function Home() {
               bullets={product.bullets}
               technologies={product.technologies}
               externalLinks={product.externalLinks}
-              imageURL = {product.imageURL}
+              image = {product.image}
               darkBackground={index % 2 === 0}
             />
           )

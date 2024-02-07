@@ -17,6 +17,12 @@ const Nav = () => {
     };
   }
 
+  const windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+
+  if (windowWidth < 500) {
+    return (<></>)
+  }
+
   return (
     <nav
       className={`p-2 text-white bg-slate-900 bg-opacity-90 sticky z-10 ${

@@ -19,7 +19,7 @@ const Product: React.FC<ExtendedProductType> = ({
   technologies,
   darkBackground,
   externalLinks,
-  imageURL,
+  image,
 }) => {
 
   return (
@@ -47,10 +47,6 @@ const Product: React.FC<ExtendedProductType> = ({
                 </li>
               ))}
           </ul>
-          {/* <p className="w-full my-4 italic self-center ml-12 text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent">
-            Built with:
-          </p> */}
-
           {/* Technologies */}
           <div className="flex flex-col justify-end h-full mt-4">
             <div className="flex justify-around flex-wrap">
@@ -65,14 +61,13 @@ const Product: React.FC<ExtendedProductType> = ({
         </article>
 
         {/* Image */}
-        {imageURL && (
+        {image && image?.url && (
           <div className="flex justify-end">
             <Image
-              src={imageURL}
-              alt="product image"
-              width={800}
-              height={800}
-              className=""
+              src={image.url}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
             />
           </div>
         )}
