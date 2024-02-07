@@ -18,6 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* Need to figure out the favicon */}
+      <Head>
+        <meta name="description" content={metadata.description || ''} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={`${inter.className}  bg-slate-900`}>
         <Nav />
         {children}
