@@ -17,7 +17,7 @@ const EmailLink = () => {
   return (
     <article className="flex justify-center items-center mb-16">
       <a
-        className="text-2xl text-purple-500 hover:text-purple-300 mr-4"
+        className="text-2xl text-gray-200 hover:text-blue-500 mr-4"
         href="mailto:your.johnwdunn20@gmail.com"
       >
         <span className="font-bold">Email: </span>
