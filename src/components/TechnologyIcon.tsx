@@ -69,8 +69,8 @@ const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
             : ""
           }
         alt={technology}
-        width={140}
-        height={50}
+        width={130}
+        height={28}
         className="rounded-lg hover:shadow-inner transition-shadow duration-200 ease-in-out m-2 sm:m-3"
         style={{
           boxShadow: '0 0 3px 1.5px #fff',
