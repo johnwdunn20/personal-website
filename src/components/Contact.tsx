@@ -1,8 +1,14 @@
 import React from "react";
 import ExternalLink from "./ExternalLink";
+import { svgPathD } from "@utils/externalLinkSVGPaths";
+
+type ExternalLinkType = {
+  url: string;
+  type: keyof typeof svgPathD;
+};
 
 const Contact = () => {
-  const externalLinks = [
+  const externalLinks: ExternalLinkType[] = [
     {
       type: "GitHub",
       url: "https://github.com/johnwdunn20",
