@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import headshot from '@assets/headshot.png'
+import headshot from '/assets/headshot.png'
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       <div className='flex items-center justify-around'>
         <h1 className='font-bold text-7xl m-4 bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent'>About</h1>
         <Image
-          src={headshot}
+          src={'/assets/headshot.png'}
           width={300}
           height={300}
           alt='Profile Picture'
@@ -28,7 +28,7 @@ const About = () => {
       </div>
       {/* Resume Download */}
       <div>
-        **Download Resume Placeholder**
+        **Download Resume Placeholder - see Balsamiq**
       </div>
 
     </section>

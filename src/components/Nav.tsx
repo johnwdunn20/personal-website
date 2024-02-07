@@ -15,13 +15,15 @@ const Nav = () => {
       setVisible(prevScrollPos > currentScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
+
+    const windowWidth = window.innerWidth;
+  
+    if (windowWidth < 500) {
+      return (<></>)
+    }
+    
   }
 
-  const windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
-
-  if (windowWidth < 500) {
-    return (<></>)
-  }
 
   return (
     <nav
