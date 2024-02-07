@@ -3,29 +3,16 @@ import Image from "next/image";
 import ExternalLink from "./ExternalLink";
 import TechnologyIcon from "./TechnologyIcon";
 
-import placeHolderImage from "@assets/grocery.png";
-import github from "@assets/github.svg";
-import javascript from "@assets/technologies/javascript-logo.svg";
-import typescript from "@assets/technologies/typescript-logo.svg";
-import reactLogo from "@assets/technologies/react-logo.svg";
-import materialUILogo from "@assets/technologies/materialui-logo.svg";
+// types
+import { ProductDataType } from "@utils/productData";
 
-import { svgPathD } from "@utils/externalLinkSVGPaths";
-
-type ProductType = {
-  title: string;
-  description: string;
-  bullets?: string[];
-  technologies?: string[];
+type AdditionalData = {
   darkBackground: boolean;
-  externalLinks?: {
-    type: keyof typeof svgPathD;
-    url: string;
-  }[];
-  imageURL?: string;
-};
+}
 
-const Product: React.FC<ProductType> = ({
+type ExtendedProductType = ProductDataType & AdditionalData;
+
+const Product: React.FC<ExtendedProductType> = ({
   title,
   description,
   bullets,

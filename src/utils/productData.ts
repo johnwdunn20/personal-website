@@ -1,4 +1,18 @@
-export const productData = [
+import { svgPathD } from "./externalLinkSVGPaths"
+
+export type ProductDataType = {
+  title: string,
+  description: string,
+  bullets: string[],
+  technologies: string[],
+  externalLinks: {
+    type: keyof typeof svgPathD,
+    url: string,
+  }[],
+  imageURL?: string,
+}
+
+export const productData: ProductDataType[] = [
   // React Query Rewind
   {
     title:"React Query Rewind",
