@@ -36,9 +36,6 @@ const Nav = () => {
     <li className="ml-4 rounded-lg bg-violet-700 py-2 px-4 cursor-pointer shadow-lg hover:bg-violet-500">
       <a href="#about">About</a>
     </li>
-    <li className="ml-4 rounded-lg bg-violet-700 py-2 px-4  cursor-pointer shadow-lg hover:bg-violet-500">
-      <a href="#work">Work</a>
-    </li>
     <li className="ml-4 mr-2 rounded-lg bg-violet-700 py-2 px-4 cursor-pointer shadow-lg hover:bg-violet-500">
       <a href="#contact">Contact</a>
     </li>
