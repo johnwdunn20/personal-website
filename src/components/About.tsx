@@ -28,7 +28,7 @@ const About = () => {
       </div>
       {/* Resume Download */}
       <div>
-        **Download Resume Placeholder**
+        **Download Resume Placeholder - see Balsamiq**
       </div>
 
     </section>
