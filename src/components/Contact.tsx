@@ -13,10 +13,14 @@ const Contact = () => {
       type: "GitHub",
       url: "https://github.com/johnwdunn20",
     },
+    {
+      type: "LinkedIn",
+      url: "https://www.linkedin.com/in/johnwdunn/",
+    },
   ];
 
   return (
-    <section id="contact" className="bg-slate-900 w-full">
+    <section id="contact" className="bg-slate-800 w-full">
     <h1 className="text-center text-4xl mt-4">Contact Me</h1>
       {externalLinks &&
         externalLinks.map((obj, index) => (

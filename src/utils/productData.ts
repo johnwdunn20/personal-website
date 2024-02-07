@@ -107,28 +107,28 @@ export const productData: ProductDataType[] = [
     }
   },
   // React JsonDiffPatch
-  {
-    title:"React JsonDiffPatch",
-    description: "Displays json diffs in a human readable format and allows users to toggle nodes open and closed",
-    bullets: [
-      'Install the NPM package',
-      'Use the custom component to display diffs',
-    ],
-    technologies: [
-      'react',
-      'typescript'
-    ],
-    externalLinks: [
-      {
-        type: 'GitHub',
-        url: ''
-      },
-      {
-        type: 'NPM',
-        url: "",
-      },
-    ]
-  },
+  // {
+  //   title:"React JsonDiffPatch",
+  //   description: "Displays json diffs in a human readable format and allows users to toggle nodes open and closed",
+  //   bullets: [
+  //     'Install the NPM package',
+  //     'Use the custom component to display diffs',
+  //   ],
+  //   technologies: [
+  //     'react',
+  //     'typescript'
+  //   ],
+  //   externalLinks: [
+  //     {
+  //       type: 'GitHub',
+  //       url: ''
+  //     },
+  //     {
+  //       type: 'NPM',
+  //       url: "",
+  //     },
+  //   ]
+  // },
   // PGAdmin AI
   // {
   //   title:"pgAdmin AI",
