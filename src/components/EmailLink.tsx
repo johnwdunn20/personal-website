@@ -22,13 +22,13 @@ const EmailLink = () => {
   };
 
   return (
-    <article className="flex justify-center items-center mb-16">
+    <article className="flex justify-center items-center mb-16 m-4">
       <a
-        className="text-2xl text-gray-200 hover:text-blue-500 mr-4"
+        className="flex flex-wrap justify-center text-2xl text-gray-200 hover:text-blue-500 mr-4"
         href="mailto:your.johnwdunn20@gmail.com"
       >
-        <span className="font-bold">Email: </span>
-        <span className="italic underline">johnwdunn20@gmail.com</span>
+        <span className="font-bold mr-1">Email: </span>
+        <span className="ml-1 italic underline">johnwdunn20@gmail.com</span>
       </a>
       <div
         className={`ml-2 cursor-pointer transition-opacity duration-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
