@@ -21,7 +21,7 @@ const EmailLink = () => {
         href="mailto:your.johnwdunn20@gmail.com"
       >
         <span className="font-bold">Email: </span>
-        <span className="italic">johnwdunn20@gmail.com</span>
+        <span className="italic underline">johnwdunn20@gmail.com</span>
       </a>
       <div className='ml-2' onClick={handleCopy}>
             <Image
