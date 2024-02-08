@@ -17,8 +17,10 @@ const Nav = () => {
     };
 
     const windowWidth = window.innerWidth;
+    console.log(windowWidth);
 
     if (windowWidth < 500) {
+      console.log("less than 500");
       return <></>;
     }
   }
