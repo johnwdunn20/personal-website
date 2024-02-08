@@ -4,10 +4,17 @@ import Image from "next/image";
 
 const EmailLink = () => {
   const [copied, setCopied] = useState(false);
+  const [isVisible, setVisible] = useState(true);
 
   const handleCopy = () => {
-    setCopied(true);
+    setVisible(false);
     navigator.clipboard.writeText("johnwdunn20@gmail.com");
+    // reset visible after .2 seconds and change copied to true
+    setTimeout(() => {
+      setVisible(true);
+      setCopied(true);
+    }, 200);
+
     // reset copy after 3 seconds
     setTimeout(() => {
       setCopied(false);
@@ -23,14 +30,21 @@ const EmailLink = () => {
         <span className="font-bold">Email: </span>
         <span className="italic underline">johnwdunn20@gmail.com</span>
       </a>
-      <div className='ml-2 cursor-pointer' onClick={handleCopy}>
-            <Image
-              src={`${copied ?  '/assets/icons/check.svg': '/assets/icons/copy.svg'}`}
-              alt='copy'
-              width={30}
-              height={30}
-            />
-          </div>
+      <div
+        className={`ml-2 cursor-pointer transition-opacity duration-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        style={{ transition: 'opacity 0.2s ease-in-out' }} 
+
+        onClick={handleCopy}
+      >
+        <Image
+          src={`${
+            copied ? "/assets/icons/check.svg" : "/assets/icons/copy.svg"
+          }`}
+          alt="Copy"
+          width={30}
+          height={30}
+        />
+      </div>
     </article>
   );
 };
