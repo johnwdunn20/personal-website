@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@components/Nav";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={`${inter.className}  bg-slate-900`}>
         <Nav />
         {children}
+        <Analytics/>
       </body>
     </html>
   );
