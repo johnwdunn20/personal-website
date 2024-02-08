@@ -8,6 +8,8 @@ const Nav = () => {
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
 
+  console.log('type of window', typeof window);
+
   if (typeof window !== "undefined") {
     // handles SSR
     window.onscroll = () => {
