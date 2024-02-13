@@ -14,7 +14,6 @@ const ExternalLink: React.FC<ExternalLinkType> = ({ url, type }) => {
 
   if (type === "NPM") {
     return (
-      <>
         <a
           className="relative before:content-['']before:absolute before:-z-10 before:inset-0 p-6 group flex flex-col items-center justify-center"
           href={url}
@@ -37,7 +36,6 @@ const ExternalLink: React.FC<ExternalLinkType> = ({ url, type }) => {
             {type}
           </div>
         </a>
-      </>
     );
   } else if (type === "LinkedIn" || type === "Chrome") {
     return (
