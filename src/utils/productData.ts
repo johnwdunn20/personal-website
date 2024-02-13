@@ -74,9 +74,9 @@ export const productData: ProductDataType[] = [
     title:"Super Market Sorter",
     description: "Mobile-first web app that automatically sorts grocery items by aisle",
     bullets: [
-      'Enter your grocery list and watch it sort',
+      'Enter your grocery list and watch it organize your shopping list',
       'Check off items as you shop',
-      'Utilizes OpenAI API to categorize groceries'
+      'Toggle between all items and remaining items',
     ],
     technologies: [
       'react',
