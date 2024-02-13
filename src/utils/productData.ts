@@ -25,8 +25,8 @@ export const productData: ProductDataType[] = [
     description: "React Query Rewind allows developers using the state management tool React Query to time travel state directly in their browser",
     bullets: [
       'Install the NPM package and Chrome Extension',
-      'Placed the custom component next to the root of your application',
-      'Happy debugging',
+      'Place the custom component next to the root of your application',
+      'Happy debugging!',
     ],
     technologies: [
       'react',
