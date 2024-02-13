@@ -29,7 +29,8 @@ const Product: React.FC<ExtendedProductType> = ({
       }`}
     >
       {/* Text and Images */}
-      <div className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12">
+      <div data-aos={`${darkBackground ? 'slide-left' : 'slide-right'}`} data-aos-delay="200"
+        className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12">
         <article className="flex flex-col w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
           {/* Text */}
           <h1 className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
@@ -62,7 +63,7 @@ const Product: React.FC<ExtendedProductType> = ({
 
         {/* Image */}
         {image && image?.url && (
-          <div className="flex justify-end">
+          <div data-aos="zoom-in" data-aos-delay="600" className="flex justify-end">
             <Image
               src={image.url}
               alt={image.alt}

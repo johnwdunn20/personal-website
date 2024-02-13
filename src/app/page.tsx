@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect } from "react";
 import Image from "next/image";
 import Product from "@components/Product";
 import Welcome from "@components/Welcome";
@@ -5,7 +8,20 @@ import About from "@components/About";
 import Contact from "@components/Contact";
 import { productData } from "@utils/productData";
 
+
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: 'phone',
+      duration: 500,
+      easing: 'ease-out',
+    });
+  }, []);
 
   return (
     <main className="flex flex-col items-center">
