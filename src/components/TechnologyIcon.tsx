@@ -66,6 +66,8 @@ const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
             ? '/assets/technologies/python-logo.svg'
             : technology === "tsnode"
             ? '/assets/technologies/tsnode-logo.svg'
+            : technology === "pandas"
+            ? '/assets/technologies/pandas-logo.svg'
             : ""
           }
         alt={technology}
