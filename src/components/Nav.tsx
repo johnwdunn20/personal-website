@@ -5,26 +5,47 @@ import React, { useEffect, useState, CSSProperties } from "react";
 const Nav = () => {
   // Navigation bar should dissapear when scrolling down and reappear when scrolling up
 
-  const [prevScrollPos, setPrevScrollPos] = React.useState(0);
-  const [visible, setVisible] = React.useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(true); // default to true so that it doesn't show on load when on mobile
 
-  console.log('type of window', typeof window);
-
-  if (typeof window !== "undefined") {
-    // handles SSR
-    window.onscroll = () => {
+  useEffect(() => {
+    const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       setVisible(prevScrollPos > currentScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
 
-    const windowWidth = window.innerWidth;
+    window.addEventListener("scroll", handleScroll);
 
-    if (windowWidth < 500) {
-      console.log("less than 500");
-      return <></>;
-    }
-  }
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    // invoke resize on load
+    handleResize();
+
+    // handle resize when user changes the size of the window
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  
+  if (isMobile) return <></>
 
   return (
     <nav
@@ -39,7 +60,7 @@ const Nav = () => {
         <li className="ml-4 mr-2 rounded-lg py-2 px-4 cursor-pointer shadow-lg gradient-non-hover gradient-hover">
           <a href="#about">About</a>
         </li>
-        <li className="ml-4 mr-2 rounded-lg py-2 px-4 cursor-pointer shadow-lg gradient-non-hover gradient-hover gradient-hover">
+        <li className="mt-2 sm:mt-0 ml-4 mr-2 rounded-lg py-2 px-4 cursor-pointer shadow-lg gradient-non-hover gradient-hover gradient-hover">
           <a href="#contact">Contact</a>
         </li>
       </ul>
