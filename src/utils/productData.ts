@@ -127,29 +127,38 @@ export const productData: ProductDataType[] = [
       },
     ],
   },
-  // React JsonDiffPatch
-  // {
-  //   title:"React JsonDiffPatch",
-  //   description: "Displays json diffs in a human readable format and allows users to toggle nodes open and closed",
-  //   bullets: [
-  //     'Install the NPM package',
-  //     'Use the custom component to display diffs',
-  //   ],
-  //   technologies: [
-  //     'react',
-  //     'typescript'
-  //   ],
-  //   externalLinks: [
-  //     {
-  //       type: 'GitHub',
-  //       url: ''
-  //     },
-  //     {
-  //       type: 'NPM',
-  //       url: "",
-  //     },
-  //   ]
-  // },
+  // React JSON Difference
+  {
+    title:"React JSON Difference",
+    description: "Displays JSON diffs in a human readable format",
+    image: {
+      url: '/assets/products/react-json-difference.png',
+      alt: 'React Json Difference',
+      height: 200,
+      width: 500
+    },
+    bullets: [
+      'Built for React',
+      'Install the NPM package and use the custom component to display diffs',
+      'Display all fields (left) or only changed fields (right)',
+    ],
+    technologies: [
+      'react',
+      'typescript',
+      'npm',
+      'rollup'
+    ],
+    externalLinks: [
+      {
+        type: 'GitHub',
+        url: 'https://github.com/johnwdunn20/react-jsondiff'
+      },
+      {
+        type: 'NPM',
+        url: "https://www.npmjs.com/package/react-json-difference",
+      },
+    ]
+  },
   // PGAdmin AI
   // {
   //   title:"pgAdmin AI",
