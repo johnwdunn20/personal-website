@@ -35,7 +35,8 @@ export const productData: ProductDataType[] = [
       'npm',
       'webpack',
       'rollup',
-      'jest'
+      'jest',
+      'testinglibrary',
     ],
     externalLinks: [
       {

@@ -5,7 +5,7 @@ export const technologyURLs = {
   typescript: "https://www.typescriptlang.org/",
   react: "https://react.dev/",
   jest: "https://jestjs.io/",
-  reacttestinglibrary: "https://testing-library.com/docs/react-testing-library/intro/",
+  testinglibrary: "https://testing-library.com/",
   materialui: "https://material-ui.com/",
   tailwindcss: "https://tailwindcss.com/",
   webpack: "https://webpack.js.org/",
