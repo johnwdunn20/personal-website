@@ -26,5 +26,5 @@ export const technologyURLs = {
   swagger: "https://swagger.io/",
   tsnode: "https://www.npmjs.com/package/ts-node",
   pandas: "https://pandas.pydata.org/",
-  
+  githubactions: "https://docs.github.com/en/actions",
 }
