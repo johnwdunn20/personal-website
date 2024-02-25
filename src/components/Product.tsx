@@ -33,9 +33,13 @@ const Product: React.FC<ExtendedProductType> = ({
         className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12">
         <article className="flex flex-col w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
           {/* Text */}
-          <h1 className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
-            {title}
-          </h1>
+          <div className="flex">
+            <h1 className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
+              {title}
+            </h1>
+              {/* <p>SVG of Trophy</p>
+              <h3>Hackathon Challenge Winner</h3> */}
+          </div>
           <p className="w-full my-4 text-xl text-slate-200">{description}</p>
           <ul className="ml-4 mt-4 list-none">
             {bullets &&

@@ -35,6 +35,9 @@ export const productData: ProductDataType[] = [
       'npm',
       'webpack',
       'rollup',
+      'jest',
+      'testinglibrary',
+      // 'githubactions',
     ],
     externalLinks: [
       {
@@ -68,6 +71,58 @@ export const productData: ProductDataType[] = [
       height: 800,
       width: 800
     }
+  },
+  // Scraping Evo
+  {
+    title:"Scraping Evo",
+    description: "Scrapes Evo.com to find detailed ski specs and allows users to filter by any attribute",
+    bullets: [
+      "Evo's built-in search functionality only allows customers to filter skis by a handful of attributes",
+      "But any skier knows there's more to a ski than size and rocker",
+      'This script pulls in all ski specifications, allowing you to find the perfect pair for you style',
+    ],
+    technologies: [
+      'python',
+      'pandas',
+    ],
+    externalLinks: [
+      {
+        type: 'GitHub',
+        url: "https://github.com/johnwdunn20/ScrapingEvo",
+      },
+    ],
+  },
+  // Open Force
+  {
+    title:"Open Forge",
+    description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
+    image: {
+      url: '',
+      alt: 'Open Forge Example',
+      height: 200,
+      width: 500
+    },
+    bullets: [
+      "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
+      "The open source community's greatest strength is its size and active community. But for developers less entrenched in the community, it can be a tough, intimidating world to first enter.",
+      "OpenForge is a portal that allows you to find like-minded developers to build open source products. Create a profile and tell the community about yourself - what technologies you like, the areas you're passionate about, and any projects you're currently working on."
+    ],
+    technologies: [
+      'nextjs',
+      'typescript',
+      'mongodb',
+      'vercel',
+    ],
+    externalLinks: [
+      {
+        type: 'GitHub',
+        url: 'https://github.com/OpenSourceMatching/OpenSourceMatching'
+      },
+      {
+        type: 'Website',
+        url: "https://open-forge.vercel.app/",
+      },
+    ]
   },
   // Super Market Sorter
   {
@@ -106,26 +161,6 @@ export const productData: ProductDataType[] = [
       height: 300,
       width: 250
     }
-  },
-  // Scraping Evo
-  {
-    title:"Scraping Evo",
-    description: "Scrapes Evo.com to find detailed ski specs and allows users to filter by any attribute",
-    bullets: [
-      "Evo's built-in search functionality only allows customers to filter skis by a handful of attributes",
-      "But any skier knows there's more to a ski than size and rocker",
-      'This script pulls in all ski specifications, allowing you to find the perfect pair for you style',
-    ],
-    technologies: [
-      'python',
-      'pandas',
-    ],
-    externalLinks: [
-      {
-        type: 'GitHub',
-        url: "https://github.com/johnwdunn20/ScrapingEvo",
-      },
-    ],
   },
   // React JSON Difference
   {
