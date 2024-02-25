@@ -37,7 +37,7 @@ export const productData: ProductDataType[] = [
       'rollup',
       'jest',
       'testinglibrary',
-      'githubactions',
+      // 'githubactions',
     ],
     externalLinks: [
       {

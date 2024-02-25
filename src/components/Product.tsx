@@ -37,8 +37,8 @@ const Product: React.FC<ExtendedProductType> = ({
             <h1 className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
               {title}
             </h1>
-              <p>SVG of Trophy</p>
-              <h3>Hackathon Challenge Winner</h3>
+              {/* <p>SVG of Trophy</p>
+              <h3>Hackathon Challenge Winner</h3> */}
           </div>
           <p className="w-full my-4 text-xl text-slate-200">{description}</p>
           <ul className="ml-4 mt-4 list-none">
