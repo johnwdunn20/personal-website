@@ -9,19 +9,19 @@ import Contact from "@components/Contact";
 import { productData } from "@utils/productData";
 
 
-// import 'aos/dist/aos.css';
-// import AOS from 'aos';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 export default function Home() {
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     once: true,
-  //     disable: 'phone',
-  //     duration: 500,
-  //     easing: 'ease-out',
-  //   });
-  // }, []);
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: 'phone',
+      duration: 500,
+      easing: 'ease-out',
+    });
+  }, []);
 
   return (
     <main className="flex flex-col items-center">
