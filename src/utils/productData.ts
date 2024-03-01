@@ -68,8 +68,8 @@ export const productData: ProductDataType[] = [
     image: {
       url: 'https://i.imgur.com/vfeEMJV.gif',
       alt: 'React Query Rewind',
-      height: 800,
-      width: 800
+      height: 309,
+      width: 563
     }
   },
   // Scraping Evo
@@ -92,15 +92,16 @@ export const productData: ProductDataType[] = [
       },
     ],
   },
-  // Open Force
+  // Open Forge
   {
     title:"Open Forge",
     description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
     image: {
-      url: '',
-      alt: 'Open Forge Example',
-      height: 200,
-      width: 500
+      url: '/assets/products/open-forge.png',
+      alt: 'Open Forge',
+      height: 405,
+      width: 800
+      // 1.971 ratio
     },
     bullets: [
       "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
@@ -158,8 +159,9 @@ export const productData: ProductDataType[] = [
     image: {
       url: 'https://i.imgur.com/cCR8VHI.gif',
       alt: 'Super Market Sorter',
-      height: 300,
-      width: 250
+      height: 600,
+      width: 269
+      // 2.23 ratio
     }
   },
   // React JSON Difference

@@ -8,7 +8,7 @@ import { ProductDataType } from "@utils/productData";
 
 type AdditionalData = {
   darkBackground: boolean;
-}
+};
 
 type ExtendedProductType = ProductDataType & AdditionalData;
 
@@ -21,7 +21,6 @@ const Product: React.FC<ExtendedProductType> = ({
   externalLinks,
   image,
 }) => {
-
   return (
     <section
       className={`flex flex-col w-full p-2 pt-12 ${
@@ -29,15 +28,23 @@ const Product: React.FC<ExtendedProductType> = ({
       }`}
     >
       {/* Text and Images */}
-      <div data-aos={`${darkBackground ? 'slide-left' : 'slide-right'}`} data-aos-delay="200"
-        className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12">
+      <div
+        data-aos={`${darkBackground ? "slide-left" : "slide-right"}`}
+        data-aos-delay="200"
+        className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12"
+      >
         <article className="flex flex-col w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
           {/* Text */}
           <div className="flex">
-            <h1 className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
+            <h1
+              className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent"
+              style={{
+                filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
+              }}
+            >
               {title}
             </h1>
-              {/* <p>SVG of Trophy</p>
+            {/* <p>SVG of Trophy</p>
               <h3>Hackathon Challenge Winner</h3> */}
           </div>
           <p className="w-full my-4 text-xl text-slate-200">{description}</p>
@@ -55,24 +62,33 @@ const Product: React.FC<ExtendedProductType> = ({
           {/* Technologies */}
           <div className="flex flex-col justify-end h-full mt-4">
             <div className="flex justify-around flex-wrap">
-              
               {technologies &&
                 technologies.map((tech, index) => (
                   <TechnologyIcon key={index} technology={tech} />
                 ))}
-              
             </div>
           </div>
         </article>
 
         {/* Image */}
         {image && image?.url && (
-          <div data-aos="zoom-in" data-aos-delay="600" className="flex justify-end">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            className="flex justify-end shadow-md max-w-[600px] max-h-[600px]"
+          >
             <Image
               src={image.url}
               alt={image.alt}
               width={image.width}
               height={image.height}
+              // layout="responsive"
+              // objectFit="contain"
+              quality={100}
+              style={{
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+                borderRadius: "8px",
+              }}
             />
           </div>
         )}
