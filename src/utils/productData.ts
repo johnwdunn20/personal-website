@@ -68,8 +68,8 @@ export const productData: ProductDataType[] = [
     image: {
       url: 'https://i.imgur.com/vfeEMJV.gif',
       alt: 'React Query Rewind',
-      height: 800,
-      width: 800
+      height: 309,
+      width: 563
     }
   },
   // Scraping Evo
