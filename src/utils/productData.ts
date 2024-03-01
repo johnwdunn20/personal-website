@@ -92,15 +92,15 @@ export const productData: ProductDataType[] = [
       },
     ],
   },
-  // Open Force
+  // Open Forge
   {
     title:"Open Forge",
     description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
     image: {
       url: '/assets/products/open-forge.png',
       alt: 'Open Forge',
-      height: 1134,
-      width: 2872
+      height: 1041,
+      width: 2052
     },
     bullets: [
       "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
