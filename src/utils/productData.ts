@@ -99,8 +99,9 @@ export const productData: ProductDataType[] = [
     image: {
       url: '/assets/products/open-forge.png',
       alt: 'Open Forge',
-      height: 1041,
-      width: 2052
+      height: 405,
+      width: 800
+      // 1.971 ratio
     },
     bullets: [
       "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
@@ -158,8 +159,9 @@ export const productData: ProductDataType[] = [
     image: {
       url: 'https://i.imgur.com/cCR8VHI.gif',
       alt: 'Super Market Sorter',
-      height: 847,
-      width: 390
+      height: 600,
+      width: 269
+      // 2.23 ratio
     }
   },
   // React JSON Difference
