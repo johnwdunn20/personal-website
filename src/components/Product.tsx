@@ -67,12 +67,18 @@ const Product: React.FC<ExtendedProductType> = ({
 
         {/* Image */}
         {image && image?.url && (
-          <div data-aos="zoom-in" data-aos-delay="600" className="flex justify-end">
+          <div data-aos="zoom-in" data-aos-delay="600" className="flex justify-end shadow-md rounded-lg max-w-[800px] max-h-[600px]">
             <Image
               src={image.url}
               alt={image.alt}
               width={image.width}
               height={image.height}
+              layout="responsive"
+              objectFit="contain"
+              quality={100}
+              style={{
+                boxShadow: '0 0 3px 1.5px #fff',
+              }}
             />
           </div>
         )}

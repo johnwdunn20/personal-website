@@ -97,10 +97,10 @@ export const productData: ProductDataType[] = [
     title:"Open Forge",
     description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
     image: {
-      url: '',
-      alt: 'Open Forge Example',
-      height: 200,
-      width: 500
+      url: '/assets/products/open-forge.png',
+      alt: 'Open Forge',
+      height: 1134,
+      width: 2872
     },
     bullets: [
       "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
@@ -158,8 +158,8 @@ export const productData: ProductDataType[] = [
     image: {
       url: 'https://i.imgur.com/cCR8VHI.gif',
       alt: 'Super Market Sorter',
-      height: 300,
-      width: 250
+      height: 847,
+      width: 390
     }
   },
   // React JSON Difference
