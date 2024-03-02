@@ -3,6 +3,7 @@ import { technologyURLs } from "./technologyURLs"
 
 export type ProductDataType = {
   title: string,
+  winner?: string,
   description: string,
   bullets: string[],
   technologies: (keyof typeof technologyURLs)[],
@@ -37,7 +38,7 @@ export const productData: ProductDataType[] = [
       'rollup',
       'jest',
       'testinglibrary',
-      // 'githubactions',
+      'githubactions',
     ],
     externalLinks: [
       {
@@ -95,6 +96,7 @@ export const productData: ProductDataType[] = [
   // Open Forge
   {
     title:"Open Forge",
+    winner: "DeveloperWeek 2024 Hackathon Challenge Winner",
     description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
     image: {
       url: '/assets/products/open-forge.png',
