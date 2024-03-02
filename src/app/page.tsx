@@ -32,6 +32,7 @@ export default function Home() {
             <Product
               key={index}
               title={product.title}
+              winner={product.winner}
               description={product.description}
               bullets={product.bullets}
               technologies={product.technologies}

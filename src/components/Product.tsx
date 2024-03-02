@@ -14,6 +14,7 @@ type ExtendedProductType = ProductDataType & AdditionalData;
 
 const Product: React.FC<ExtendedProductType> = ({
   title,
+  winner,
   description,
   bullets,
   technologies,
@@ -35,17 +36,26 @@ const Product: React.FC<ExtendedProductType> = ({
       >
         <article className="flex flex-col w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
           {/* Text */}
-          <div className="flex">
+          <div className="flex flex-wrap justify-center items-center">
             <h1
-              className="text-4xl font-bold text-center w-full bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent"
+              className="text-4xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent"
               style={{
                 filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
               }}
             >
               {title}
             </h1>
-            {/* <p>SVG of Trophy</p>
-              <h3>Hackathon Challenge Winner</h3> */}
+            {winner && (
+              <div className="flex items-center pl-6">
+                <Image
+                  src="/assets/icons/winner.svg"
+                  alt="Award"
+                  width={60}
+                  height={60}
+                />
+                <h3 className="text-xl italic">Hackathon Challenge Winner</h3>
+              </div>
+            )}
           </div>
           <p className="w-full my-4 text-xl text-slate-200">{description}</p>
           <ul className="ml-4 mt-4 list-none">
