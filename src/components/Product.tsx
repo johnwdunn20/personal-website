@@ -46,14 +46,14 @@ const Product: React.FC<ExtendedProductType> = ({
               {title}
             </h1>
             {winner && (
-              <div className="flex items-center pl-6">
+              <div className="flex items-center pl-6 pr-8">
                 <Image
                   src="/assets/icons/winner.svg"
                   alt="Award"
                   width={60}
                   height={60}
                 />
-                <h3 className="text-xl italic">Hackathon Challenge Winner</h3>
+                <h3 className="text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent">Hackathon Challenge Winner</h3>
               </div>
             )}
           </div>
