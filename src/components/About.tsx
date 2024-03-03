@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section data-aos="fade" data-aos-delay="100" id="about" className="flex flex-col bg-slate-900">
+    <section data-aos="fade" data-aos-delay="100" id="about" className="flex flex-col bg-slate-800">
       {/* Header and image */}
       <div className="flex flex-col sm:flex-row items-center justify-around">
         <h1 className="font-bold text-7xl m-4 bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent">

@@ -20,12 +20,12 @@ const FloatingNav = ({
     icon?: JSX.Element;
   }[] = [
     {
-      name: 'Open Source',
-      link: '#open-source',
-    },
-    {
       name: 'About',
       link: '#about',
+    },
+    {
+      name: 'Open Source',
+      link: '#open-source',
     },
     {
       name: 'Contact',
