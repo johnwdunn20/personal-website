@@ -32,10 +32,10 @@ const Product: React.FC<ExtendedProductType> = ({
       <div
         data-aos={`${darkBackground ? "slide-left" : "slide-right"}`}
         data-aos-delay="200"
-        className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12"
+        className="flex items-center flex-col lg:flex-row gap-4 md:gap-8 lg:gap-12 lg:mx-14"
       >
         {/* Text */}
-        <article className="flex flex-col w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
+        <article className="flex flex-col w-full md:w-1/2 xl:w-1/3">
           <div className="flex flex-wrap justify-center items-center">
             <h1
               className="text-4xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent"
@@ -85,7 +85,7 @@ const Product: React.FC<ExtendedProductType> = ({
           <div
             data-aos="zoom-in"
             data-aos-delay="600"
-            className="flex justify-end relative"
+            className=" relative h-full w-full"
           >
             <Image
               src={image.url}
@@ -101,6 +101,7 @@ const Product: React.FC<ExtendedProductType> = ({
                 // borderRadius: "8px",
                 objectFit: "contain"
               }}
+              className="max-w-full h-auto"
             />
           </div>
         )}

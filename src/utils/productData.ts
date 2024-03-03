@@ -69,8 +69,8 @@ export const productData: ProductDataType[] = [
     image: {
       url: 'https://i.imgur.com/vfeEMJV.gif',
       alt: 'React Query Rewind',
-      height: 309,
-      width: 563
+      height: 309*2,
+      width: 563*2
     }
   },
   // Open Forge
@@ -81,8 +81,8 @@ export const productData: ProductDataType[] = [
     image: {
       url: '/assets/products/open-forge.png',
       alt: 'Open Forge',
-      height: 304,
-      width: 600
+      height: 304*2,
+      width: 600*2
       // 1.971 ratio
     },
     bullets: [
