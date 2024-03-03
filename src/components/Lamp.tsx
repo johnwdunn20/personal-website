@@ -17,6 +17,26 @@ export function LampDemo() {
         }}
         className="mt-4 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
+        {/* Start of my component */}
+        Test
+        {/* <div className="flex flex-col w-full py-8">
+          <h1
+            className="font-bold text-center text-8xl text-white bg-clip-text text-transparent"
+            style={{
+              filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
+            }}
+          >
+            John Dunn
+          </h1>
+          <h3
+            className="pt-5 italic text-center text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent"
+            style={{
+              filter: "drop-shadow(0 10px 10px rgba(0,0,0,0.4))",
+            }}
+          >
+            Software Enginer and Product Manager
+          </h3>
+        </div> */}
       </motion.h1>
     </LampContainer>
   );
@@ -97,24 +117,7 @@ export const LampContainer = ({
       </div>
 
       <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
-        <div className="flex flex-col w-full py-8">
-          <h1
-            className="font-bold text-center text-8xl text-white bg-clip-text text-transparent"
-            style={{
-              filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
-            }}
-          >
-            John Dunn
-          </h1>
-          <h3
-            className="pt-5 italic text-center text-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent"
-            style={{
-              filter: "drop-shadow(0 10px 10px rgba(0,0,0,0.4))",
-            }}
-          >
-            Software Enginer and Product Manager
-          </h3>
-        </div>
+        
       </div>
     </div>
   );
