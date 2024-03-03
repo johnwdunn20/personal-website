@@ -24,14 +24,14 @@ const Product: React.FC<ExtendedProductType> = ({
 }) => {
   return (
     <section
-      className={`flex flex-col w-full p-2 pt-12 ${
-        darkBackground ? "bg-slate-800" : "bg-slate-700"
-      }`}
+      // ${darkBackground ? "bg-slate-800" : "bg-slate-700"}
+      className={`flex flex-col w-full p-2 pt-12 bg-black-900
+      `}
     >
       {/* Title */}
-      <div className="flex flex-wrap justify-center items-center mb-8">
+      <div className="flex flex-wrap justify-center items-center my-4">
         <h1
-          className="text-4xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent h-full"
+          className="text-5xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent h-full"
           style={{
             filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
           }}

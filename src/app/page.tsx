@@ -24,9 +24,9 @@ export default function Home() {
   // }, []);
 
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center ">
       <Welcome/>
-      <div id="open-source" className="w-full">
+      <div id="open-source" className="w-full bg-dot-white/[0.2]">
         {productData.map((product, index) => {
           return (
             <Product
