@@ -73,26 +73,6 @@ export const productData: ProductDataType[] = [
       width: 563
     }
   },
-  // Scraping Evo
-  {
-    title:"Scraping Evo",
-    description: "Scrapes Evo.com to find detailed ski specs and allows users to filter by any attribute",
-    bullets: [
-      "Evo's built-in search functionality only allows customers to filter skis by a handful of attributes",
-      "But any skier knows there's more to a ski than size and rocker",
-      'This script pulls in all ski specifications, allowing you to find the perfect pair for you style',
-    ],
-    technologies: [
-      'python',
-      'pandas',
-    ],
-    externalLinks: [
-      {
-        type: 'GitHub',
-        url: "https://github.com/johnwdunn20/ScrapingEvo",
-      },
-    ],
-  },
   // Open Forge
   {
     title:"Open Forge",
@@ -126,6 +106,26 @@ export const productData: ProductDataType[] = [
         url: "https://open-forge.vercel.app/",
       },
     ]
+  },
+  // Scraping Evo
+  {
+    title:"Scraping Evo",
+    description: "Scrapes Evo.com to find detailed ski specs and allows users to filter by any attribute",
+    bullets: [
+      "Evo's built-in search functionality only allows customers to filter skis by a handful of attributes",
+      "But any skier knows there's more to a ski than size and rocker",
+      'This script pulls in all ski specifications, allowing you to find the perfect pair for you style',
+    ],
+    technologies: [
+      'python',
+      'pandas',
+    ],
+    externalLinks: [
+      {
+        type: 'GitHub',
+        url: "https://github.com/johnwdunn20/ScrapingEvo",
+      },
+    ],
   },
   // Super Market Sorter
   {
