@@ -81,13 +81,12 @@ export const productData: ProductDataType[] = [
     image: {
       url: '/assets/products/open-forge.png',
       alt: 'Open Forge',
-      height: 405,
-      width: 800
+      height: 304,
+      width: 600
       // 1.971 ratio
     },
     bullets: [
       "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
-      "The open source community's greatest strength is its size and active community. But for developers less entrenched in the community, it can be a tough, intimidating world to first enter.",
       "OpenForge is a portal that allows you to find like-minded developers to build open source products. Create a profile and tell the community about yourself - what technologies you like, the areas you're passionate about, and any projects you're currently working on."
     ],
     technologies: [

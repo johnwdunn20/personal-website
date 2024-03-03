@@ -34,8 +34,8 @@ const Product: React.FC<ExtendedProductType> = ({
         data-aos-delay="200"
         className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12"
       >
+        {/* Text */}
         <article className="flex flex-col w-full md:w-2/3 xl:w-1/3 mx-4 sm:mx-2 md:mx-0">
-          {/* Text */}
           <div className="flex flex-wrap justify-center items-center">
             <h1
               className="text-4xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent"
@@ -85,19 +85,21 @@ const Product: React.FC<ExtendedProductType> = ({
           <div
             data-aos="zoom-in"
             data-aos-delay="600"
-            className="flex justify-end shadow-md max-w-[600px] max-h-[600px]"
+            className="flex justify-end relative"
           >
             <Image
               src={image.url}
               alt={image.alt}
               width={image.width}
               height={image.height}
+              // fill
               // layout="responsive"
               // objectFit="contain"
-              quality={100}
+              // quality={100}
               style={{
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
-                borderRadius: "8px",
+                // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+                // borderRadius: "8px",
+                objectFit: "contain"
               }}
             />
           </div>
