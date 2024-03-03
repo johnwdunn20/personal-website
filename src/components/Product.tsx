@@ -25,7 +25,7 @@ const Product: React.FC<ExtendedProductType> = ({
   return (
     <section
       // ${darkBackground ? "bg-slate-800" : "bg-slate-700"}
-      className={`flex flex-col w-full p-2 pt-12 bg-black-900
+      className={`flex flex-col w-full p-2 pt-2 bg-black-900
       `}
     >
       {/* Title */}
