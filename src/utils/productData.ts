@@ -69,9 +69,42 @@ export const productData: ProductDataType[] = [
     image: {
       url: 'https://i.imgur.com/vfeEMJV.gif',
       alt: 'React Query Rewind',
-      height: 309,
-      width: 563
+      height: 309*1.4,
+      width: 563*1.4
     }
+  },
+  // Open Forge
+  {
+    title:"Open Forge",
+    winner: "DeveloperWeek 2024 Hackathon Challenge Winner",
+    description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
+    image: {
+      url: '/assets/products/open-forge.png',
+      alt: 'Open Forge',
+      height: 304*1.3,
+      width: 600*1.3
+      // 1.971 ratio
+    },
+    bullets: [
+      "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
+      "OpenForge is a portal that allows you to find like-minded developers to build open source products. Create a profile and tell the community about yourself - what technologies you like, the areas you're passionate about, and any projects you're currently working on."
+    ],
+    technologies: [
+      'nextjs',
+      'typescript',
+      'mongodb',
+      'vercel',
+    ],
+    externalLinks: [
+      {
+        type: 'GitHub',
+        url: 'https://github.com/OpenSourceMatching/OpenSourceMatching'
+      },
+      {
+        type: 'Website',
+        url: "https://open-forge.vercel.app/",
+      },
+    ]
   },
   // Scraping Evo
   {
@@ -92,40 +125,6 @@ export const productData: ProductDataType[] = [
         url: "https://github.com/johnwdunn20/ScrapingEvo",
       },
     ],
-  },
-  // Open Forge
-  {
-    title:"Open Forge",
-    winner: "DeveloperWeek 2024 Hackathon Challenge Winner",
-    description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
-    image: {
-      url: '/assets/products/open-forge.png',
-      alt: 'Open Forge',
-      height: 405,
-      width: 800
-      // 1.971 ratio
-    },
-    bullets: [
-      "DeveloperWeek 2024 Hackathon Challenge Winner - the nation's largest challenge-driven in-person and online hackathon",
-      "The open source community's greatest strength is its size and active community. But for developers less entrenched in the community, it can be a tough, intimidating world to first enter.",
-      "OpenForge is a portal that allows you to find like-minded developers to build open source products. Create a profile and tell the community about yourself - what technologies you like, the areas you're passionate about, and any projects you're currently working on."
-    ],
-    technologies: [
-      'nextjs',
-      'typescript',
-      'mongodb',
-      'vercel',
-    ],
-    externalLinks: [
-      {
-        type: 'GitHub',
-        url: 'https://github.com/OpenSourceMatching/OpenSourceMatching'
-      },
-      {
-        type: 'Website',
-        url: "https://open-forge.vercel.app/",
-      },
-    ]
   },
   // Super Market Sorter
   {

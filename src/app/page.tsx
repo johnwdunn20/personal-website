@@ -7,41 +7,43 @@ import Welcome from "@components/Welcome";
 import About from "@components/About";
 import Contact from "@components/Contact";
 import { productData } from "@utils/productData";
+import { LampContainer, LampDemo } from "@components/Lamp";
 
-
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import AOS from 'aos';
 
 export default function Home() {
 
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: 'phone',
-      duration: 500,
-      easing: 'ease-out',
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     once: true,
+  //     disable: 'phone',
+  //     duration: 500,
+  //     easing: 'ease-out',
+  //   });
+  // }, []);
 
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center ">
+      {/* <LampDemo/> */}
+      {/* <LampContainer/> */}
       <Welcome/>
-      <div id="open-source" className="w-full">
+      <div id="open-source" className="w-full bg-dot-white/[0.2]">
         {productData.map((product, index) => {
           return (
             <Product
-              key={index}
-              title={product.title}
-              winner={product.winner}
-              description={product.description}
-              bullets={product.bullets}
-              technologies={product.technologies}
-              externalLinks={product.externalLinks}
-              image = {product.image}
-              darkBackground={index % 2 === 0}
+            key={index}
+            title={product.title}
+            winner={product.winner}
+            description={product.description}
+            bullets={product.bullets}
+            technologies={product.technologies}
+            externalLinks={product.externalLinks}
+            image = {product.image}
+            darkBackground={index % 2 === 0}
             />
-          )
-        })}
+            )
+          })}
       </div>
       <About/>
       <Contact/>
