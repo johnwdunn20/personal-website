@@ -74,9 +74,11 @@ const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
-            <button className="border text-sm font-medium relative border-white/[0.2] text-slate-900 hover:text-black px-4 py-2 rounded-full gradient-non-hover gradient-hover">
+            <button
+              className="border text-sm font-medium relative border-white/[0.2] text-slate-900 hover:text-black px-4 py-2 rounded-full gradient-non-hover gradient-hover"
+              key={idx}
+            >
               <a
-                key={idx}
                 href={navItem.link}
                 className={cn(
                   "relative dark:text-neutral-50 items-center flex space-x-1 "
