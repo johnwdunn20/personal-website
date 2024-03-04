@@ -67,8 +67,9 @@ const FloatingNav = ({
         transition={{
           duration: 0.2,
         }}
+        // **Added hidden sm:flex to hide on mobile. Right now, it tries to display icons that don't exist. May be able to just remove the icons altogether so that it always displays text
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-white/[0.2] rounded-full bg-slate-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-4 bg-opacity-70",
+          "hidden sm:flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-white/[0.2] rounded-full bg-slate-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-4 pl-4 py-2  items-center justify-center space-x-4 bg-opacity-70",
           className
         )}
       >
