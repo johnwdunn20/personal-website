@@ -31,7 +31,7 @@ const Product: React.FC<ExtendedProductType> = ({
       {/* Title */}
       <div className="flex flex-wrap justify-center items-center my-4">
         <h1
-          className="text-5xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent h-full"
+          className="text-5xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent h-full p-2"
           style={{
             filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
           }}
@@ -46,7 +46,7 @@ const Product: React.FC<ExtendedProductType> = ({
               width={60}
               height={60}
             />
-            <h3 className="text-3xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent italic">
+            <h3 className="text-3xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent italic p-2">
               Hackathon Challenge Winner
             </h3>
           </div>
