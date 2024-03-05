@@ -24,11 +24,11 @@ export default function Home() {
   // }, []);
 
   return (
-    <main className="flex flex-col items-center ">
+    <main className="flex flex-col items-center bg-dot-white/[0.2]">
       {/* <LampDemo/> */}
       {/* <LampContainer/> */}
       <Welcome/>
-      <div id="open-source" className="w-full bg-dot-white/[0.2]">
+      <div id="open-source" className="w-full ">
         {productData.map((product, index) => {
           return (
             <Product
