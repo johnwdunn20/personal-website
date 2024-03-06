@@ -17,7 +17,7 @@ const Welcome = () => {
           filter: "drop-shadow(0 10px 10px rgba(0,0,0,0.4))",
         }}
       >
-        Software Enginer
+        Software Engineer
       </h3>
     </div>
   );
