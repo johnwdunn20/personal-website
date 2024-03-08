@@ -12,6 +12,7 @@ export type ProductDataType = {
     url: string,
   }[],
   image?: {
+    type: 'gif' | 'png' | 'mp4',
     url: string,
     alt: string,
     height: number,
@@ -67,6 +68,7 @@ export const productData: ProductDataType[] = [
       },
     ],
     image: {
+      type: 'gif',
       url: 'https://i.imgur.com/vfeEMJV.gif',
       alt: 'React Query Rewind',
       height: 309*1.4,
@@ -79,6 +81,7 @@ export const productData: ProductDataType[] = [
     winner: "DeveloperWeek 2024 Hackathon Challenge Winner",
     description: "If you want to go fast, go alone. If you want to go far, go together. Find like-minded developers for your open source projects.",
     image: {
+      type: 'png',
       url: '/assets/products/open-forge.png',
       alt: 'Open Forge',
       height: 304*1.3,
@@ -158,7 +161,8 @@ export const productData: ProductDataType[] = [
       },
     ],
     image: {
-      url: 'https://i.imgur.com/cCR8VHI.gif',
+      type: 'mp4',
+      url: '/assets/products/super-market-sorter.mp4',
       alt: 'Super Market Sorter',
       height: 600,
       width: 269
@@ -170,6 +174,7 @@ export const productData: ProductDataType[] = [
     title:"React JSON Difference",
     description: "Displays JSON diffs in a human readable format",
     image: {
+      type: 'png',
       url: '/assets/products/react-json-difference.png',
       alt: 'React Json Difference',
       height: 200,

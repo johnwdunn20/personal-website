@@ -90,24 +90,47 @@ const Product: React.FC<ExtendedProductType> = ({
             data-aos-delay="600"
             className="flex items-center justify-center relative h-full mr-0 md:mr-4 lg:md-10"
           >
-            <Image
-              src={image.url}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-              // fill
-              // layout="responsive"
-              // objectFit="contain"
-              // quality={100}
-              style={{
-                // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
-                // borderRadius: "8px",
-                objectFit: "contain",
-              }}
-              className="max-w-full h-auto"
-            />
+            {/* Gifs or pngs */}
+            {image.type !== "mp4" && 
+              <Image
+                src={image.url}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                // fill
+                // layout="responsive"
+                // objectFit="contain"
+                // quality={100}
+                style={{
+                  // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+                  // borderRadius: "8px",
+                  objectFit: "contain",
+                }}
+                className="max-w-full h-auto"
+              />
+            }
+            {/* Videos */}
+            {image.type === "mp4" && (
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="max-w-[260px] h-auto"
+                style={{
+                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+                  borderRadius: "8px",
+                  objectFit: "contain",
+                }}
+              >
+                <source src={image.url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            
+            )}
           </div>
         )}
+
       </div>
       {/* Icons */}
       <div className="flex justify-center items-center flex-wrap sm:gap-2 md:gap-8 lg:gap-12">
