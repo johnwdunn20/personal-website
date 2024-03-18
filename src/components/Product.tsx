@@ -109,7 +109,7 @@ const Product: React.FC<ExtendedProductType> = ({
         {/* Videos */}
         {image && image?.url && image.type === "mp4" && (
           <div
-            className="relative w-full lg:max-w-4xl lg:max-h-[500px]"
+            className="relative w-[90%] md:max-w-2xl lg:max-w-4xl md: max-h-[300px] lg:max-h-[500px]"
             style={{aspectRatio: `${image.width}/${image.height}`}}
           >
             <iframe
