@@ -68,12 +68,19 @@ export const productData: ProductDataType[] = [
       },
     ],
     image: {
-      type: 'gif',
-      url: 'https://i.imgur.com/vfeEMJV.gif',
+      type: 'mp4',
+      url: 'https://player.vimeo.com/video/924729579?badge=0&amp;autoplay=1&loop=1&muted=1&background=1&quality=1080p&autopause=0&amp;player_id=0&amp;app_id=58479',
       alt: 'React Query Rewind',
-      height: 309*1.4,
-      width: 563*1.4
+      height: 480,
+      width: 993
     }
+    // image: {
+    //   type: 'gif',
+    //   url: 'https://i.imgur.com/vfeEMJV.gif',
+    //   alt: 'React Query Rewind',
+    //   height: 309*1.4,
+    //   width: 563*1.4
+    // }
   },
   // Open Forge
   {
@@ -162,9 +169,9 @@ export const productData: ProductDataType[] = [
     ],
     image: {
       type: 'mp4',
-      url: '/assets/products/super-market-sorter.mp4',
+      url: 'https://player.vimeo.com/video/924693547?badge=0&amp;autoplay=1&loop=1&muted=1&background=1&quality=1080p&autopause=0&amp;player_id=0&amp;app_id=58479',
       alt: 'Super Market Sorter',
-      height: 600,
+      height: 563,
       width: 269
       // 2.23 ratio
     }
