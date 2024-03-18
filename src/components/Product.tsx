@@ -90,22 +90,51 @@ const Product: React.FC<ExtendedProductType> = ({
             data-aos-delay="600"
             className="flex items-center justify-center relative h-full mr-0 md:mr-4 lg:md-10"
           >
-            <Image
-              src={image.url}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-              // fill
-              // layout="responsive"
-              // objectFit="contain"
-              // quality={100}
-              style={{
-                // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
-                // borderRadius: "8px",
-                objectFit: "contain",
-              }}
-              className="max-w-full h-auto"
-            />
+            {/* Gifs or pngs */}
+            {image.type !== "mp4" && (
+              <Image
+                src={image.url}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                // fill
+                // layout="responsive"
+                // objectFit="contain"
+                // quality={100}
+                style={{
+                  // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+                  // borderRadius: "8px",
+                  objectFit: "contain",
+                }}
+                className="max-w-full h-auto"
+              />
+            )}
+            {/* Videos */}
+            {image.type === "mp4" && (
+              // <video
+              //   autoPlay
+              //   loop
+              //   muted
+              //   playsInline
+              //   className="max-w-[260px] h-auto"
+              //   style={{
+              //     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+              //     borderRadius: "8px",
+              //     objectFit: "contain",
+              //   }}
+              // >
+              //   <source src={image.url} type="video/mp4" />
+              //   Your browser does not support the video tag.
+              // </video>
+              <iframe
+                src="https://player.vimeo.com/video/924693547?badge=0&amp;autoplay=1&loop=1&muted=1&background=1&autopause=0&amp;player_id=0&amp;app_id=58479"
+                width="260"
+                height="563"
+                // frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="SuperMarketSorter"
+              ></iframe>
+            )}
           </div>
         )}
       </div>
