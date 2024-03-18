@@ -127,7 +127,7 @@ const Product: React.FC<ExtendedProductType> = ({
               //   Your browser does not support the video tag.
               // </video>
               <iframe
-                src="https://player.vimeo.com/video/924693547?badge=0&amp;autoplay=1&loop=1&autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/924693547?badge=0&amp;autoplay=1&loop=1&muted=1&background=1&autopause=0&amp;player_id=0&amp;app_id=58479"
                 width="260"
                 height="563"
                 // frameborder="0"
