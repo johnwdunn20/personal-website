@@ -91,7 +91,7 @@ const Product: React.FC<ExtendedProductType> = ({
             className="flex items-center justify-center relative h-full mr-0 md:mr-4 lg:md-10"
           >
             {/* Gifs or pngs */}
-            {image.type !== "mp4" && 
+            {image.type !== "mp4" && (
               <Image
                 src={image.url}
                 alt={image.alt}
@@ -108,29 +108,35 @@ const Product: React.FC<ExtendedProductType> = ({
                 }}
                 className="max-w-full h-auto"
               />
-            }
+            )}
             {/* Videos */}
             {image.type === "mp4" && (
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="max-w-[260px] h-auto"
-                style={{
-                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
-                  borderRadius: "8px",
-                  objectFit: "contain",
-                }}
-              >
-                <source src={image.url} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            
+              // <video
+              //   autoPlay
+              //   loop
+              //   muted
+              //   playsInline
+              //   className="max-w-[260px] h-auto"
+              //   style={{
+              //     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+              //     borderRadius: "8px",
+              //     objectFit: "contain",
+              //   }}
+              // >
+              //   <source src={image.url} type="video/mp4" />
+              //   Your browser does not support the video tag.
+              // </video>
+              <iframe
+                src="https://player.vimeo.com/video/924693547?badge=0&amp;autoplay=1&loop=1&autopause=0&amp;player_id=0&amp;app_id=58479"
+                width="260"
+                height="563"
+                // frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="SuperMarketSorter"
+              ></iframe>
             )}
           </div>
         )}
-
       </div>
       {/* Icons */}
       <div className="flex justify-center items-center flex-wrap sm:gap-2 md:gap-8 lg:gap-12">
