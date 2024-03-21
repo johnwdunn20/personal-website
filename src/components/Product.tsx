@@ -107,9 +107,9 @@ const Product: React.FC<ExtendedProductType> = ({
           </div>
         )}
         {/* Videos */}
-        {image && image?.url && image.type === "mp4" && (
+        {image && image?.url && image.type === "mp4" && title === 'React Query Rewind' &&(
           <div
-            className="relative w-[90%] md:max-w-2xl lg:max-w-4xl md: max-h-[300px] lg:max-h-[500px]"
+            className="relative w-full lg:w-4/5 m-0 md:max-w-2xl lg:max-w-4xl md: max-h-[300px] lg:max-h-[500px]"
             style={{aspectRatio: `${image.width}/${image.height}`}}
           >
             <iframe
