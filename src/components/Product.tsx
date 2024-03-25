@@ -107,28 +107,56 @@ const Product: React.FC<ExtendedProductType> = ({
           </div>
         )}
         {/* Videos */}
-        {image && image?.url && image.type === "mp4" && title === 'React Query Rewind' &&(
-          <div
-            className="relative w-full lg:w-4/5 m-0 md:max-w-2xl lg:max-w-4xl md: max-h-[300px] lg:max-h-[500px]"
-            style={{aspectRatio: `${image.width}/${image.height}`}}
-          >
-            <iframe
-              src={image.url}
-              frameBorder="0"
-              // allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-              // allowFullScreen
-              title={image.alt}
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                margin: "0",
-              }}
-            ></iframe>
-          </div>
-        )}
+        {image &&
+          image?.url &&
+          image.type === "mp4" &&
+          title === "React Query Rewind" && (
+            <div
+              className="relative w-full lg:w-2/5 m-0 md:max-w-2xl lg:max-w-2xl md: max-h-[300px] lg:max-h-[500px]"
+              style={{ aspectRatio: `${image.width}/${image.height}` }}
+            >
+              <iframe
+                src={image.url}
+                frameBorder="0"
+                // allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                // allowFullScreen
+                title={image.alt}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  margin: "0",
+                }}
+              ></iframe>
+            </div>
+          )}
+        {image &&
+          image?.url &&
+          image.type === "mp4" &&
+          title === "Super Market Sorter" && (
+            <div
+              className="relative w-full lg:w-4/5 m-0 md:max-w-2xl lg:max-w-4xl md: max-h-[300px] lg:max-h-[500px]"
+              style={{ aspectRatio: `${image.width}/${image.height}` }}
+            >
+              <iframe
+                src={image.url}
+                frameBorder="0"
+                // allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                // allowFullScreen
+                title={image.alt}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  margin: "0",
+                }}
+              ></iframe>
+            </div>
+          )}
       </div>
       {/* Icons */}
       <div className="flex justify-center items-center flex-wrap sm:gap-2 md:gap-8 lg:gap-12">
