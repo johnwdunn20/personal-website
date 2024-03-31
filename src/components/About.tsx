@@ -43,8 +43,8 @@ const About = () => {
       <div className="flex justify-center items-center m-8">
         <a
           className="relative before:content-['']before:absolute before:-z-10 before:inset-0 p-2 group flex items-center justify-center"
-          href={"/assets/resume.pdf"}
-          download={"John Dunn Resume.pdf"}
+          href={"/assets/John_Dunn_Resume.pdf"}
+          download={"John_Dunn_Resume.pdf"}
           target="_blank"
         >
           <div className="relative h-12 w-12 flex items-center justify-center mb-3 transition-transform duration-200 ease-in-out ">
