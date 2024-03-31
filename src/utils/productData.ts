@@ -68,9 +68,12 @@ export const productData: ProductDataType[] = [
     ],
     image: {
       url: 'https://i.imgur.com/vfeEMJV.gif',
+      // url: 'https://i.imgur.com/g8KrqAg.gif',
       alt: 'React Query Rewind',
       height: 309*1.4,
       width: 563*1.4
+      // height: 338*1.2,
+      // width: 600*1.2
     }
   },
   // Open Forge
