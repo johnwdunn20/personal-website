@@ -109,6 +109,33 @@ export const productData: ProductDataType[] = [
       },
     ]
   },
+  // Google AI Hackathon
+  {
+    title:"Improving Interopability in Healthcare Data | Google AI Hackathon",
+    description: "A platform that uses AI to improve interoperability in healthcare data",
+    bullets: [
+      'The platform uses AI to improve interoperability in healthcare data',
+      'The platform uses AI to improve interoperability in healthcare data',
+      'The platform uses AI to improve interoperability in healthcare data',
+    ],
+    technologies: [
+      'python',
+      'postgresql',
+      'googlecloud',
+      'gemeni',
+      'fastapi',
+    ],
+    externalLinks: [
+      {
+        type: 'GitHub',
+        url: ''
+      },
+      {
+        type: 'Swagger',
+        url: ''
+      }
+    ]
+  },
   // Scraping Evo
   {
     title:"Scraping Evo",

@@ -27,4 +27,8 @@ export const technologyURLs = {
   tsnode: "https://www.npmjs.com/package/ts-node",
   pandas: "https://pandas.pydata.org/",
   githubactions: "https://docs.github.com/en/actions",
+  postgresql: "https://www.postgresql.org/",
+  googlecloud: "https://cloud.google.com/",
+  gemeni: 'https://ai.google.dev/',
+  fastapi: 'https://fastapi.tiangolo.com/',
 }
