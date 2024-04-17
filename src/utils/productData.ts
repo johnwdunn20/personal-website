@@ -111,10 +111,10 @@ export const productData: ProductDataType[] = [
   },
   // Google AI Hackathon
   {
-    title:"Improving Interopability in Healthcare Data | Google AI Hackathon",
-    description: "A platform that uses AI to improve interoperability in healthcare data",
+    title:"Interopability in Healthcare Data - Google AI Hackathon",
+    description: "Improving interoperability in healthcare data with AI",
     bullets: [
-      'The platform uses AI to improve interoperability in healthcare data',
+      'Entities often interpret FHIR specifications differently',
       'The platform uses AI to improve interoperability in healthcare data',
       'The platform uses AI to improve interoperability in healthcare data',
     ],
@@ -128,10 +128,14 @@ export const productData: ProductDataType[] = [
     externalLinks: [
       {
         type: 'GitHub',
-        url: ''
+        url: 'https://github.com/johnwdunn20/google-ai-hackathon'
       },
       {
         type: 'Swagger',
+        url: 'https://coral-silicon-420022.uw.r.appspot.com/docs'
+      },
+      {
+        type: 'DevPost',
         url: ''
       }
     ]
