@@ -29,6 +29,6 @@ export const technologyURLs = {
   githubactions: "https://docs.github.com/en/actions",
   postgresql: "https://www.postgresql.org/",
   googlecloud: "https://cloud.google.com/",
-  gemeni: 'https://ai.google.dev/',
+  gemini: 'https://ai.google.dev/',
   fastapi: 'https://fastapi.tiangolo.com/',
 }

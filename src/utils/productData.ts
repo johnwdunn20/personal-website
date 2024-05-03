@@ -127,7 +127,7 @@ export const productData: ProductDataType[] = [
       'python',
       'postgresql',
       'googlecloud',
-      'gemeni',
+      'gemini',
       'fastapi',
     ],
     externalLinks: [
