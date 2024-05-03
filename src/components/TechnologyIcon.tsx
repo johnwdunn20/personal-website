@@ -78,6 +78,10 @@ const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
             ? '/assets/technologies/fastapi-logo.svg'
             : technology === 'gemini'
             ? '/assets/technologies/gemini-logo.svg'
+            : technology === 'postgresql'
+            ? '/assets/technologies/postgresql-logo.svg'
+            : technology === 'googlecloud'
+            ? '/assets/technologies/googlecloud-logo.svg'
             : ""
           }
         alt={technology}
