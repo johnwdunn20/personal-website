@@ -111,7 +111,7 @@ export const productData: ProductDataType[] = [
   },
   // Google AI Hackathon
   {
-    title:"Schema Sync",
+    title:"Med Schema Sync",
     description: "Improving interoperability in healthcare data with AI - Created for DevPost Google AI Hackathon 2024",
     image: {
       url: '/assets/products/schema-sync.png',
