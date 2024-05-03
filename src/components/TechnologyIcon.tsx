@@ -74,6 +74,8 @@ const TechnologyIcon:React.FC<TechnologyIconType> = ( {technology} ) => {
             ? '/assets/technologies/pandas-logo.svg'
             : technology === "githubactions"
             ? '/assets/technologies/githubactions-logo.svg'
+            : technology === "fastapi"
+            ? '/assets/technologies/fastapi-logo.svg'
             : ""
           }
         alt={technology}
