@@ -107,6 +107,46 @@ export const productData: ProductDataType[] = [
         type: 'Website',
         url: "https://open-forge.vercel.app/",
       },
+      {
+        type: 'DevPost',
+        url: 'https://devpost.com/software/team-team'
+      }
+    ]
+  },
+  // Google AI Hackathon
+  {
+    title:"Med Schema Sync",
+    description: "Improving interoperability in healthcare data with AI - Created for DevPost Google AI Hackathon 2024",
+    image: {
+      url: '/assets/products/schema-sync.png',
+      alt: 'Schema Sync',
+      height: 1062*0.4,
+      width: 2026*0.4
+    },
+    bullets: [
+      'Consumers of healthcare data are challenged to create a standard data model that encompasses the unique data standards of different providers',
+      'This service uses AI to reconcile differences in data models and create a standard schema so that application logic can be built upon one standard',
+    ],
+    technologies: [
+      'python',
+      'postgresql',
+      'googlecloud',
+      'gemini',
+      'fastapi',
+    ],
+    externalLinks: [
+      {
+        type: 'GitHub',
+        url: 'https://github.com/johnwdunn20/google-ai-hackathon'
+      },
+      {
+        type: 'Swagger',
+        url: 'https://coral-silicon-420022.uw.r.appspot.com/docs'
+      },
+      {
+        type: 'DevPost',
+        url: 'https://devpost.com/software/google-ai-hackathon-placeholder'
+      }
     ]
   },
   // Scraping Evo
@@ -200,43 +240,4 @@ export const productData: ProductDataType[] = [
       },
     ]
   },
-  // PGAdmin AI
-  // {
-  //   title:"pgAdmin AI",
-  //   description: "Use AI to automatically generate SQL queries",
-  //   bullets: [
-  //     'Add your OpenAI API key',
-  //     'Watch the AI generate SQL queries for you',
-  //     'Forked from pgAdmin4',
-  //   ],
-  //   technologies: [
-  //     'python',
-  //     'django'
-  //   ],
-  //   externalLinks: [
-  //     {
-  //       type: 'GitHub',
-  //       url: ''
-  //     },
-  //   ]
-  // },
-  // // Social Media
-  // {
-  //   title:"Social Media Placeholder",
-  //   description: "Exploring integrations in NextJS",
-  //   bullets: [
-  //     'TBD',
-  //   ],
-  //   technologies: [
-  //     'nextjs',
-  //     'typescript',
-  //     'tailwindcss',
-  //   ],
-  //   externalLinks: [
-  //     {
-  //       type: 'GitHub',
-  //       url: ''
-  //     },
-  //   ]
-  // },
 ]
