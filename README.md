@@ -1,1 +1,1 @@
-Welcome to my personal website. Had to [johnwdunn.com](https://www.johnwdunn.com/) to check out the full website.
+Welcome to my personal website. Head to [johnwdunn.com](https://www.johnwdunn.com/) to check out the full website.
