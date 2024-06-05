@@ -141,7 +141,7 @@ export const productData: ProductDataType[] = [
       },
       {
         type: 'DevPost',
-        url: ''
+        url: 'https://devpost.com/software/google-ai-hackathon-placeholder'
       }
     ]
   },
