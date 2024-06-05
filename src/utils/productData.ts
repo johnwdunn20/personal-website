@@ -107,6 +107,10 @@ export const productData: ProductDataType[] = [
         type: 'Website',
         url: "https://open-forge.vercel.app/",
       },
+      {
+        type: 'DevPost',
+        url: 'https://devpost.com/software/team-team'
+      }
     ]
   },
   // Google AI Hackathon
