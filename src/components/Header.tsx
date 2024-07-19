@@ -5,22 +5,35 @@ import Image from 'next/image'
 const Header = () => {
 
   return (
-    <section className="flex flex-col w-full mx-auto items-center bg-dot-white/[0.2] border-red-500 border-8 text-white" >
-      <nav className="flex justify-around items-center  p-4 ">
-        <div className="flex space-x-4">
-          <Link href="/about" className="hover:bg-gray-700 px-3 py-2 rounded">
+    <section className="flex flex-col w-full mx-auto items-center bg-dot-white/[0.2] bg-slate-800" >
+      <nav className="flex p-4 w-full text-white">
+        <div className="flex justify-end space-x-4 text-xl w-full pr-64">
+          <Link href="#open-source" className="hover:bg-gray-700 px-3 py-2 rounded">
+            Open Source
+          </Link>
+          <Link href="#about" className="hover:bg-gray-700 px-3 py-2 rounded">
             About
           </Link>
-          <Link href="/contact" className="hover:bg-gray-700 px-3 py-2 rounded">
+          <Link href="#contact" className="hover:bg-gray-700 px-3 py-2 rounded">
             Contact
+          </Link>
+          <Link href="https://www.linkedin.com/in/johnwdunn/" target='_blank' className="hover:bg-gray-700 px-3 py-2 rounded">
+            LinkedIn
+          </Link>
+          <Link href="https://github.com/johnwdunn20" target='_blank'  className="hover:bg-gray-700 px-3 py-2 rounded">
+            Github
+          </Link>
+          <Link href="/assets/John_Dunn_Resume.pdf" target='_blank' className="hover:bg-gray-700 px-3 py-2 rounded">
+            Download Resume
           </Link>
         </div>
       </nav>
-      <div className='flex p-8'>
+      <div className='flex justify-between items-center w-full py-8 px-48 text-white'>
         {/* Text */}
         <div className='flex flex-col'>
-          <h1>John Dunn</h1>
-          <h5>Software Engineer</h5>
+          <h1 className='text-8xl font-bold'>John Dunn</h1>
+          <h5 className='text-4xl'>Software Engineer</h5>
+          <div>Contact</div>
         </div>
 
         {/* Image */}
@@ -28,8 +41,8 @@ const Header = () => {
           <Image
             src="/assets/headshot_bw.png"
             alt="John Dunn"
-            width={500}
-            height={500}
+            width={450}
+            height={450}
             />
         </div>
       </div>
