@@ -28,8 +28,8 @@ export default function Home() {
     <main className="flex flex-col items-center bg-dot-white/[0.2]">
       {/* <LampDemo/> */}
       {/* <LampContainer/> */}
-      <Welcome/>
       <Header/>
+      <Welcome/>
       <div id="open-source" className="w-full ">
         {productData.map((product, index) => {
           return (
