@@ -17,6 +17,10 @@ const Header = () => {
           <Link href="#contact" className="hover:bg-gray-700 px-3 py-2 rounded">
             Contact
           </Link>
+          
+          {/* Divider between internal and external links */}
+          <div className="px-1 py-2">|</div>
+
           <Link href="https://www.linkedin.com/in/johnwdunn/" target='_blank' className="hover:bg-gray-700 px-3 py-2 rounded">
             LinkedIn
           </Link>
