@@ -36,7 +36,7 @@ const About = () => {
         </p>
         <br />
         <p className="lg:w-[80%]">
-          {`I spent 5 years in health tech as a developer and product manager where I built products to price hospital-insurance claims according to their contracted rate, normalize data, and identify underpaid claims for our hospital clients.`}
+          {`I've spent the last 6 years in health tech, working as both an engineer and a product manager. I've built products to price hospital-insurance claims according to their contracted rate, normalize data, and identify underpaid claims. I enjoy everything from cleaning large data sets and building pipelines to optimizing browser performance and ensuring a seamlesss user experience.`}
         </p>
       </div>
       {/* Resume Download */}
