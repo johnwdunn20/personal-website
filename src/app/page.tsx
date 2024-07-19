@@ -8,6 +8,7 @@ import About from "@components/About";
 import Contact from "@components/Contact";
 import { productData } from "@utils/productData";
 import { LampContainer, LampDemo } from "@components/Lamp";
+import Header from "@components/Header";
 
 // import 'aos/dist/aos.css';
 // import AOS from 'aos';
@@ -28,6 +29,7 @@ export default function Home() {
       {/* <LampDemo/> */}
       {/* <LampContainer/> */}
       <Welcome/>
+      <Header/>
       <div id="open-source" className="w-full ">
         {productData.map((product, index) => {
           return (
