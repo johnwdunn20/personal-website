@@ -101,7 +101,7 @@ const ExternalLink: React.FC<ExternalLinkType> = ({ url, type }) => {
             viewBox="-3.2 -3.2 38.40 38.40"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
               stroke-linecap="round"
