@@ -1,13 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import { productData } from "@utils/productData";
 
 const About = () => {
+  let countProducts = productData.length;
+
   return (
     <section
       data-aos="fade"
       data-aos-delay="100"
       id="about"
-      className="flex flex-col bg-slate-800 bg-dot-white/[0.2]"
+      className={`flex flex-col ${countProducts / 2 === 0 ? 'bg-slate-800' : 'bg-slate-700'} bg-dot-white/[0.2]`}
     >
       {/* Header and image */}
       <div className="flex flex-col sm:flex-row items-center justify-around">

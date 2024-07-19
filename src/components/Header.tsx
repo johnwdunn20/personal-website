@@ -31,7 +31,7 @@ const Header = () => {
           <Link 
           href="/assets/John_Dunn_Resume.pdf"
           target='_blank'
-          className="px-3 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-fuchsia-500 hover:bg-clip-text hover:text-transparent"
+          className="hover:bg-gray-700 px-3 py-2 rounded"
           >
             Download Resume
           </Link>

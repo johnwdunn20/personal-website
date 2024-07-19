@@ -42,7 +42,7 @@ export default function Home() {
             technologies={product.technologies}
             externalLinks={product.externalLinks}
             image = {product.image}
-            darkBackground={index % 2 === 0}
+            darkBackground={index % 2 !== 0}
             />
             )
           })}

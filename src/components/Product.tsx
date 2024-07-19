@@ -24,9 +24,8 @@ const Product: React.FC<ExtendedProductType> = ({
 }) => {
   return (
     <section
-      // ${darkBackground ? "bg-slate-800" : "bg-slate-700"}
-      className={`flex flex-col w-full p-2 pt-2 bg-black-900
-      `}
+      // className={`flex flex-col w-full p-2 pt-2 bg-black-900`}
+      className={`flex flex-col w-full p-2 pt-2 bg-dot-white/[0.2] ${darkBackground ? "bg-slate-800" : "bg-slate-700"}`}
     >
       {/* Title */}
       <div className="flex flex-wrap justify-center items-center my-4">
