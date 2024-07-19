@@ -29,7 +29,7 @@ export default function Home() {
       {/* <LampDemo/> */}
       {/* <LampContainer/> */}
       <Header/>
-      <Welcome/>
+      {/* <Welcome/> */}
       <div id="open-source" className="w-full ">
         {productData.map((product, index) => {
           return (

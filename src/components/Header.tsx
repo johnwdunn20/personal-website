@@ -5,8 +5,8 @@ import Image from 'next/image'
 const Header = () => {
 
   return (
-    <section className="flex flex-col w-full mx-auto items-center bg-dot-white/[0.2] bg-slate-800" >
-      <nav className="flex p-4 w-full text-white">
+    <section className="flex flex-col w-full mx-auto items-center bg-dot-white/[0.2] bg-slate-800 text-gray-100" >
+      <nav className="flex p-4 w-full ">
         <div className="flex justify-end space-x-4 text-xl w-full pr-64">
           <Link href="#open-source" className="hover:bg-gray-700 px-3 py-2 rounded">
             Open Source
@@ -28,7 +28,7 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-      <div className='flex justify-between items-center w-full py-8 px-48 text-white'>
+      <div className='flex justify-between items-center w-full py-8 px-48'>
         {/* Text */}
         <div className='flex flex-col'>
           <h1 className='text-8xl font-bold'>John Dunn</h1>
