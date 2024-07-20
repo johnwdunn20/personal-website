@@ -10,7 +10,7 @@ const About = () => {
       data-aos="fade"
       data-aos-delay="100"
       id="about"
-      className={`flex flex-col ${countProducts / 2 === 0 ? 'bg-slate-800' : 'bg-slate-700'} bg-dot-white/[0.2]`}
+      className={`flex flex-col ${countProducts / 2 === 0 ? "bg-slate-950" : "bg-slate-900"} bg-dot-white/[0.2]`}
     >
       {/* Header and image */}
       <div className="flex flex-col sm:flex-row items-center justify-around">
