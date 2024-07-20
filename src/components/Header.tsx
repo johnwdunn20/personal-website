@@ -31,12 +31,13 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="flex flex-col w-full mx-auto items-center bg-dot-white/[0.2] bg-slate-950 text-gray-100">
+    <section className="flex flex-col w-full mx-auto items-center bg-dot-white/[0.2] bg-slate-950 text-gray-300">
       {/* Top Nav Bar */}
       <nav className="flex p-4 w-full ">
         <div className="flex flex-col flex-wrap justify-center space-x-4 md:flex-row md:justify-end text-xl w-full pr-64">
           {!isMobile && (
             <>
+            {/* *** Internal links might need to be a tags, not Link */}
               <Link
                 href="#open-source"
                 className="hover:bg-gray-700 px-3 py-2 rounded"
@@ -54,12 +55,6 @@ const Header = () => {
                 className="hover:bg-gray-700 px-3 py-2 rounded"
               >
                 About
-              </Link>
-              <Link
-                href="#contact"
-                className="hover:bg-gray-700 px-3 py-2 rounded"
-              >
-                Contact
               </Link>
 
               {/* Divider between internal and external links */}
@@ -113,6 +108,12 @@ const Header = () => {
             John Dunn
           </h1>
           <h5 className="text-2xl md:text-4xl py-2">Software Engineer</h5>
+          <Link
+            className="bg-sky-800 hover:bg-sky-600 hover:cursor-pointer rounded mt-2 py-2 px-8 text-lg"
+            href="#contact"
+            >
+            Contact
+          </Link>
         </div>
 
         {/* Image */}
