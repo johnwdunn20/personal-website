@@ -39,7 +39,7 @@ const Header = () => {
       </nav>
 
       {/* Title and Image */}
-      <div className='flex justify-between items-center w-full py-8 px-48'>
+      <div className='flex justify-between items-center w-full pt-8 pb-0 px-48'>
         {/* Text */}
         <div className='flex flex-col'>
           
