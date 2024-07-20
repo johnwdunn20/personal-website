@@ -15,7 +15,7 @@ const About = () => {
       {/* Header and image */}
       <div className="flex flex-col sm:flex-row items-center justify-around">
         <h1
-          className="font-bold text-7xl m-4 bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent"
+          className="font-bold text-7xl m-4 text-gray-300"
           style={{
             filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
           }}
