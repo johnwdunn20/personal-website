@@ -2,6 +2,7 @@ import React from "react";
 import ExternalLink from "./ExternalLink";
 import EmailLink from "./EmailLink";
 import { svgPathD } from "@utils/externalLinkSVGPaths";
+import { productData } from "@utils/productData";
 
 type ExternalLinkType = {
   url: string;
@@ -20,10 +21,13 @@ const Contact = () => {
     },
   ];
 
+
+  let countProducts = productData.length;
+
   return (
-    <section id="contact" className="bg-slate-900 w-full bg-dot-white/[0.2]">
+    <section id="contact" className={`${countProducts / 2 !== 0 ? "bg-slate-950" : "bg-slate-900"}  w-full bg-dot-white/[0.2]`}>
       <h1
-        className="text-center font-bold text-6xl mt-4 bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent"
+        className="text-center font-bold text-6xl mt-4 text-gray-300"
         style={{
           filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
         }}

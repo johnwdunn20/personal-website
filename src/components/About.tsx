@@ -1,25 +1,28 @@
 import React from "react";
 import Image from "next/image";
+import { productData } from "@utils/productData";
 
 const About = () => {
+  let countProducts = productData.length;
+
   return (
     <section
       data-aos="fade"
       data-aos-delay="100"
       id="about"
-      className="flex flex-col bg-slate-800 bg-dot-white/[0.2]"
+      className={`flex flex-col ${countProducts / 2 === 0 ? "bg-slate-950" : "bg-slate-900"} bg-dot-white/[0.2]`}
     >
       {/* Header and image */}
       <div className="flex flex-col sm:flex-row items-center justify-around">
         <h1
-          className="font-bold text-7xl m-4 bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent"
+          className="font-bold text-7xl m-4 text-gray-300"
           style={{
             filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
           }}
         >
           About
         </h1>
-        <Image
+        {/* <Image
           src={"/assets/headshot.png"}
           width={300}
           height={300}
@@ -27,7 +30,7 @@ const About = () => {
           className="rounded-2xl m-4"
           data-aos="zoom-in"
           data-aos-delay="600"
-        />
+        /> */}
       </div>
       {/* Text */}
       <div className="flex flex-col  items-center justify-between mx-8  font-sans text-2xl text-gray-200">
@@ -36,7 +39,7 @@ const About = () => {
         </p>
         <br />
         <p className="lg:w-[80%]">
-          {`I spent 5 years in health tech as a developer and product manager where I built products to price hospital-insurance claims according to their contracted rate, normalize data, and identify underpaid claims for our hospital clients.`}
+          {`I've spent the last 6 years in health tech, working as both an engineer and a product manager. I enjoy everything from cleaning large data sets and building pipelines to optimizing browser performance and ensuring a seamlesss user experience.`}
         </p>
       </div>
       {/* Resume Download */}
@@ -56,7 +59,7 @@ const About = () => {
             >
               <path
                 d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z"
-                stroke="#1C274C"
+                stroke="#334155"
                 strokeWidth="1.5"
               ></path>{" "}
               <path

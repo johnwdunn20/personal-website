@@ -8,6 +8,7 @@ import About from "@components/About";
 import Contact from "@components/Contact";
 import { productData } from "@utils/productData";
 import { LampContainer, LampDemo } from "@components/Lamp";
+import Header from "@components/Header";
 
 // import 'aos/dist/aos.css';
 // import AOS from 'aos';
@@ -27,8 +28,9 @@ export default function Home() {
     <main className="flex flex-col items-center bg-dot-white/[0.2]">
       {/* <LampDemo/> */}
       {/* <LampContainer/> */}
-      <Welcome/>
-      <div id="open-source" className="w-full ">
+      <Header/>
+      {/* <Welcome/> */}
+      <div id="projects" className="w-full ">
         {productData.map((product, index) => {
           return (
             <Product
@@ -40,7 +42,7 @@ export default function Home() {
             technologies={product.technologies}
             externalLinks={product.externalLinks}
             image = {product.image}
-            darkBackground={index % 2 === 0}
+            darkBackground={index % 2 !== 0}
             />
             )
           })}

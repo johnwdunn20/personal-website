@@ -24,14 +24,30 @@ const Product: React.FC<ExtendedProductType> = ({
 }) => {
   return (
     <section
-      // ${darkBackground ? "bg-slate-800" : "bg-slate-700"}
-      className={`flex flex-col w-full p-2 pt-2 bg-black-900
-      `}
+      // className={`flex flex-col w-full p-2 pt-2 bg-black-900`}
+      className={`flex flex-col w-full p-2 pt-2 bg-dot-white/[0.2] ${darkBackground ? "bg-slate-950" : "bg-slate-900"}`}
+      id={`${title === 'React Query Rewind' ? 'open-source' : ''}`}
     >
       {/* Title */}
       <div className="flex flex-wrap justify-center items-center my-4">
-        <h1
+        {/* <h1
           className="text-5xl font-bold text-center bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent h-full p-2"
+          style={{
+            filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
+          }}
+        >
+          {title}
+        </h1> */}
+          {/* <h1
+          className="text-5xl font-bold text-center bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent h-full p-2"
+          style={{
+            filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
+          }}
+        >
+          {title}
+        </h1> */}
+        <h1
+          className="text-5xl font-bold text-center text-gray-100 h-full p-2"
           style={{
             filter: "drop-shadow(0 10px 10px rgba(0,0,0,1.5))",
           }}
@@ -46,7 +62,7 @@ const Product: React.FC<ExtendedProductType> = ({
               width={60}
               height={60}
             />
-            <h3 className="text-3xl bg-gradient-to-r from-purple-600 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent italic p-2">
+            <h3 className="text-3xl bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent italic p-2">
               Hackathon Challenge Winner
             </h3>
           </div>
