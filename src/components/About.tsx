@@ -22,7 +22,7 @@ const About = () => {
         >
           About
         </h1>
-        <Image
+        {/* <Image
           src={"/assets/headshot.png"}
           width={300}
           height={300}
@@ -30,7 +30,7 @@ const About = () => {
           className="rounded-2xl m-4"
           data-aos="zoom-in"
           data-aos-delay="600"
-        />
+        /> */}
       </div>
       {/* Text */}
       <div className="flex flex-col  items-center justify-between mx-8  font-sans text-2xl text-gray-200">
