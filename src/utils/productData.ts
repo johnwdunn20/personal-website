@@ -23,7 +23,7 @@ export const productData: ProductDataType[] = [
   // React Query Rewind
   {
     title:"React Query Rewind",
-    description: "React Query Rewind allows developers using the state management tool TanStack (React) Query to time travel state directly in their browser",
+    description: "React Query Rewind allows developers using the state management tool TanStack (React) Query to time travel state directly in their browser. An official TanStack (React) Query Community Package",
     bullets: [
       'Install the NPM package and Chrome Extension',
       'Place the custom component next to the root of your application',
