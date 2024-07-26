@@ -25,7 +25,7 @@ const EmailLink = () => {
     <article className="flex justify-center items-center mb-16 m-4">
       <a
         className="flex flex-wrap justify-center text-2xl text-gray-200 hover:text-blue-500 mr-4"
-        href="mailto:your.johnwdunn20@gmail.com"
+        href="mailto:johnwdunn20@gmail.com"
       >
         <span className="font-bold mr-1">Email: </span>
         <span className="ml-1 italic underline">johnwdunn20@gmail.com</span>
