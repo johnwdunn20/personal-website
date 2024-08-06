@@ -170,45 +170,45 @@ export const productData: ProductDataType[] = [
   //     },
   //   ],
   // },
-  // // Super Market Sorter
-  // {
-  //   title:"Super Market Sorter",
-  //   description: "Mobile-first web app that automatically sorts grocery items by aisle",
-  //   bullets: [
-  //     'Enter your grocery list and watch it organize your shopping list',
-  //     'Check off items as you shop',
-  //     'Toggle between all items and remaining items',
-  //   ],
-  //   technologies: [
-  //     'react',
-  //     'tailwindcss',
-  //     'typescript',
-  //     'tsnode',
-  //     'jwt',
-  //     'express',
-  //     'mongodb',
-  //     'webpack',
-  //     'aws',
-  //     'docker',
-  //   ],
-  //   externalLinks: [
-  //     {
-  //       type: 'Website',
-  //       url: "https://www.supermarketsorter.com/",
-  //     },
-  //     {
-  //       type: 'GitHub',
-  //       url: "https://github.com/johnwdunn20/grocery-list",
-  //     },
-  //   ],
-  //   image: {
-  //     url: 'https://i.imgur.com/cCR8VHI.gif',
-  //     alt: 'Super Market Sorter',
-  //     height: 600,
-  //     width: 269
-  //     // 2.23 ratio
-  //   }
-  // },
+  // Super Market Sorter
+  {
+    title:"Super Market Sorter",
+    description: "Mobile-first web app that automatically sorts grocery items by aisle",
+    bullets: [
+      'Enter your grocery list and watch it organize your shopping list',
+      'Check off items as you shop',
+      'Toggle between all items and remaining items',
+    ],
+    technologies: [
+      'react',
+      'tailwindcss',
+      'typescript',
+      'tsnode',
+      'jwt',
+      'express',
+      'mongodb',
+      'webpack',
+      'aws',
+      'docker',
+    ],
+    externalLinks: [
+      {
+        type: 'Website',
+        url: "https://www.supermarketsorter.com/",
+      },
+      {
+        type: 'GitHub',
+        url: "https://github.com/johnwdunn20/grocery-list",
+      },
+    ],
+    image: {
+      url: 'https://i.imgur.com/cCR8VHI.gif',
+      alt: 'Super Market Sorter',
+      height: 600,
+      width: 269
+      // 2.23 ratio
+    }
+  },
   // React JSON Difference
   {
     title:"React JSON Difference",
