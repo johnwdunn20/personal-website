@@ -151,64 +151,64 @@ export const productData: ProductDataType[] = [
     ]
   },
   // Scraping Evo
-  {
-    title:"Scraping Evo",
-    description: "Scrapes Evo.com to find detailed ski specs and allows users to filter by any attribute",
-    bullets: [
-      "Evo's built-in search functionality only allows customers to filter skis by a handful of attributes",
-      "But any skier knows there's more to a ski than size and rocker",
-      'This script pulls in all ski specifications, allowing you to find the perfect pair for you style',
-    ],
-    technologies: [
-      'python',
-      'pandas',
-    ],
-    externalLinks: [
-      {
-        type: 'GitHub',
-        url: "https://github.com/johnwdunn20/ScrapingEvo",
-      },
-    ],
-  },
-  // Super Market Sorter
-  {
-    title:"Super Market Sorter",
-    description: "Mobile-first web app that automatically sorts grocery items by aisle",
-    bullets: [
-      'Enter your grocery list and watch it organize your shopping list',
-      'Check off items as you shop',
-      'Toggle between all items and remaining items',
-    ],
-    technologies: [
-      'react',
-      'tailwindcss',
-      'typescript',
-      'tsnode',
-      'jwt',
-      'express',
-      'mongodb',
-      'webpack',
-      'aws',
-      'docker',
-    ],
-    externalLinks: [
-      {
-        type: 'Website',
-        url: "https://www.supermarketsorter.com/",
-      },
-      {
-        type: 'GitHub',
-        url: "https://github.com/johnwdunn20/grocery-list",
-      },
-    ],
-    image: {
-      url: 'https://i.imgur.com/cCR8VHI.gif',
-      alt: 'Super Market Sorter',
-      height: 600,
-      width: 269
-      // 2.23 ratio
-    }
-  },
+  // {
+  //   title:"Scraping Evo",
+  //   description: "Scrapes Evo.com to find detailed ski specs and allows users to filter by any attribute",
+  //   bullets: [
+  //     "Evo's built-in search functionality only allows customers to filter skis by a handful of attributes",
+  //     "But any skier knows there's more to a ski than size and rocker",
+  //     'This script pulls in all ski specifications, allowing you to find the perfect pair for you style',
+  //   ],
+  //   technologies: [
+  //     'python',
+  //     'pandas',
+  //   ],
+  //   externalLinks: [
+  //     {
+  //       type: 'GitHub',
+  //       url: "https://github.com/johnwdunn20/ScrapingEvo",
+  //     },
+  //   ],
+  // },
+  // // Super Market Sorter
+  // {
+  //   title:"Super Market Sorter",
+  //   description: "Mobile-first web app that automatically sorts grocery items by aisle",
+  //   bullets: [
+  //     'Enter your grocery list and watch it organize your shopping list',
+  //     'Check off items as you shop',
+  //     'Toggle between all items and remaining items',
+  //   ],
+  //   technologies: [
+  //     'react',
+  //     'tailwindcss',
+  //     'typescript',
+  //     'tsnode',
+  //     'jwt',
+  //     'express',
+  //     'mongodb',
+  //     'webpack',
+  //     'aws',
+  //     'docker',
+  //   ],
+  //   externalLinks: [
+  //     {
+  //       type: 'Website',
+  //       url: "https://www.supermarketsorter.com/",
+  //     },
+  //     {
+  //       type: 'GitHub',
+  //       url: "https://github.com/johnwdunn20/grocery-list",
+  //     },
+  //   ],
+  //   image: {
+  //     url: 'https://i.imgur.com/cCR8VHI.gif',
+  //     alt: 'Super Market Sorter',
+  //     height: 600,
+  //     width: 269
+  //     // 2.23 ratio
+  //   }
+  // },
   // React JSON Difference
   {
     title:"React JSON Difference",
