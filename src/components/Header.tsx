@@ -1,41 +1,15 @@
-"useclient";
-
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { useState, useEffect } from "react";
-
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(true); // default to true so that it doesn't show on load when on mobile
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    // invoke resize on load
-    handleResize();
-
-    // handle resize when user changes the size of the window
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup function to remove the event listener
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <section className="flex flex-col w-full mx-auto items-center bg-dot-white/[0.2] bg-slate-950 text-gray-300">
       {/* Top Nav Bar */}
       <nav className="flex p-4 w-full ">
-        <div className="flex flex-col flex-wrap justify-center space-x-4 md:flex-row md:justify-end text-xl w-full pr-64">
-          {!isMobile && (
+        {/* Hide on small screens. Otherwise flex */}
+        <div className="hidden md:flex flex-col flex-wrap justify-center space-x-4 md:flex-row md:justify-end text-xl w-full pr-64">
             <>
             {/* *** Internal links might need to be a tags, not Link */}
               <Link
@@ -82,7 +56,6 @@ const Header = () => {
                 Download Resume
               </Link>
             </>
-          )}
         </div>
       </nav>
 
